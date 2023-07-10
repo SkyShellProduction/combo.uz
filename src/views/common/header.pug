@@ -1,0 +1,27 @@
+- 
+    var links = [
+        {name: 'На пластиковые окна', url: '#!'},
+        {name: 'Руллонные', url: '#!'},
+        {name: 'Вертикальные', url: '#!'},
+        {name: 'День-Ночь', url: '#!'},
+        {name: 'Плиссе', url: '#!'},
+        {name: 'Шторы', url: '#!'},
+    ]
+mixin header() 
+    header.header
+        .container 
+            nav.header__nav 
+                a.logo(href="/")
+                    img(src="/assets/images/icons/logo.svg", alt="combo.uz logo")
+                ul.header__list
+                    each link in links 
+                        li.header__list-item 
+                            a.header__link(href=link.url)=link.name  
+                ul.header__list.header__list-se 
+                    li.header__list-se-item 
+                        a.header__link-se(href="#!")
+                            img(src="/assets/images/icons/heart.svg", alt="combo.uz favorites")  
+                    li.header__list-se-item 
+                        a.header__link-se(href="#!")
+                            img(src="/assets/images/icons/work.svg", alt="combo.uz works")  
+

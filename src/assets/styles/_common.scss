@@ -1,0 +1,19 @@
+body{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--mainBgColor);
+}
+.container{
+    max-width: calc(1350px + var(--containerPadding) * 2);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--containerPadding);
+}
+.main{
+    position: relative;
+    z-index: 5;
+}
+img{
+    display: block;   
+}
