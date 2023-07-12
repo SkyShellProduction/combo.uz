@@ -21,9 +21,6 @@ const devConfig = merge(baseConfig, {
             }
         }
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-    ]
 });
 module.exports = new Promise((resolve, reject) => {
     resolve(devConfig);
