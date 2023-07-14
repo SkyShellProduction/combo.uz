@@ -6,7 +6,7 @@
         {name: 'День-Ночь', url: '#!'},
         {name: 'Плиссе', url: '#!'},
         {name: 'Шторы', url: '#!'},
-        {name: 'Авторизация / Регистрация', url: '#!'},
+        {name: 'Авторизация / Регистрация', url: '#!', class: "header__link-sp"},
     ]
 mixin header() 
     header.header
@@ -17,7 +17,7 @@ mixin header()
                 ul.header__list
                     each link in links 
                         li.header__list-item 
-                            a.header__link(href=link.url)=link.name  
+                            a.header__link(href=link.url, class=link.class)=link.name  
                 ul.header__list.header__list-se 
                     li.header__list-se-item 
                         a.header__link-se(href="#!")
