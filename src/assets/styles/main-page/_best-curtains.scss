@@ -1,0 +1,41 @@
+.best-curtains {
+    margin: 49px 0 20px;
+    position: relative;
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__background {
+        object-fit: cover;
+        width: 100%;
+        min-height: 300px;
+        height: 100%;
+    }
+
+    &__text {
+        position: absolute;
+        top: 80px;
+        max-width: 988px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &__title {
+        color: var(--mainTitleText);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 37px;
+    }
+
+    &__descr {
+        color: #363853;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}

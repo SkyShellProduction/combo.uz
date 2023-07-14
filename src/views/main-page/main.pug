@@ -3,4 +3,7 @@ include ../common/header.pug
 +header()
 main.main 
     include ./best-curtains.pug
+    include ./roll-curtains.pug
+    +roll-curtains(6)
+    +roll-curtains(3, 'roll-curtains__extra')
 include ../common/footer.pug    

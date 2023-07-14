@@ -48,6 +48,10 @@
             color: var(--textWhite);
             background: var(--primaryColor);
             font-size: 16px;
+            transition: background 0.2s linear;
+            &:hover{
+                background: #0B90C6;
+            }
         }
     }
 }
