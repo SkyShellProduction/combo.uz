@@ -18,3 +18,10 @@ body{
 img{
     display: block;   
 }
+
+.darkBlueHover{
+    transition: background 0.2s linear;
+    &:hover{
+        background: #0B90C6;
+    }
+}

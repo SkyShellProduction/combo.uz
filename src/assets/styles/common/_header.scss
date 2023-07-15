@@ -11,7 +11,8 @@
         align-items: center;
         width: 100%;
     }
-    &__list-se{
+
+    &__list-se {
         width: initial;
         gap: 16px;
         display: flex;
@@ -25,8 +26,35 @@
         font-weight: 400;
         line-height: normal;
         margin-right: 10px;
-        &:hover, &-sp{
+        position: relative;
+
+        &:hover,
+        &-sp {
             color: var(--textPrimary);
+        }
+    }
+
+    &__link-se {
+        position: relative;
+    }
+
+    &__busket-notify {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        background: var(--primaryColor);
+        color: var(--textWhite);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        position: absolute;
+        right: -1px;
+        top: -8px;
+        &.have-goods{
+            display: flex;
         }
     }
 
