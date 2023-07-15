@@ -1,3 +1,26 @@
-.have-questions{
-    
+.have-questions {
+    margin-top: 62px;
+    &__title {
+        color: #11263A;
+        text-align: center;
+        // font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 133%;
+        margin-bottom: 30px;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 9px;
+        iframe{
+            width: 100%;
+            min-height: 381px;
+        }
+    }
+    &__video{
+        width: 100%;
+        min-height: 381px;
+    }
 }
