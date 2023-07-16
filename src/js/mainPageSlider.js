@@ -5,6 +5,8 @@ if (mainSlider) {
       grabCursor: true,
       //   direction: "vertical",
       effect: "creative",
+      slidesPerView: 3,
+      spaceBetween: 44,
       creativeEffect: {
         prev: {
           shadow: true,

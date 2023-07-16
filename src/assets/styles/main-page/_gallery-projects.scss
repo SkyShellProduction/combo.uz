@@ -30,6 +30,26 @@
     }
 
     &__slider {
-        flex-grow: 1;
+        // flex-grow: 1;
+        // max-width: 404px;
+        overflow-x: visible;
+        overflow-y: hidden;
+    }
+
+    &__wrapper{
+
+    }
+
+    &__slide{
+        width: max-content;
+        max-width: 372px;
+        width: 100%;
+        &.swiper-slide-active{
+            max-width: 404px;
+        }
+        
+    }
+    .swiper-3d .swiper-slide-shadow{
+        background: transparent;
     }
 }
