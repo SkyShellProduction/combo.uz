@@ -1,0 +1,35 @@
+.gallery-projects {
+    position: relative;
+    background: rgba(15, 158, 216, 0.10);
+    padding: 44px 0;
+    overflow: hidden;
+
+    &__items {
+        display: flex;
+        gap: 44px;
+    }
+
+    &__left {
+        margin-top: 75px;
+        max-width: 315px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    &__title {
+        color: #424158;
+        font-size: 35px;
+        line-height: 48px;
+        margin-bottom: 27px;
+    }
+
+    &__descr {
+        color: rgba(54, 56, 83, 0.80);
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__slider {
+        flex-grow: 1;
+    }
+}
