@@ -10,7 +10,8 @@
   "author": "vladimir",
   "license": "ISC",
   "browserslist": [
-    "last 10 version"
+    "last 10 version",
+    "not ie >= 7"
   ],
   "devDependencies": {
     "@babel/core": "^7.22.5",

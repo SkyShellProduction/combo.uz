@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,8 +9,14 @@
     -webkit-tap-highlight-color: transparent;
     outline: none;
     border: none;
-    &:focus{
+
+    
+    &:focus {
         outline: none;
         border: none;
     }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
