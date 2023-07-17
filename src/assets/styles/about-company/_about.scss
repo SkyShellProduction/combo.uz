@@ -1,0 +1,37 @@
+.about {
+  margin: 115px 0 60px;
+  position: relative;
+
+  &__content {
+    display: flex;
+  }
+  &__left {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  &__title {
+    color: #3a3a3a;
+    font-size: 28px;
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+
+  &__descr {
+    max-width: 315px;
+    color: #616161;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__right{
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  &__slide{
+    transition: .2s linear;
+    img{
+        width: 100%;
+    }
+  }
+}
