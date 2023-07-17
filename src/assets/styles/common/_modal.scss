@@ -1,0 +1,33 @@
+.modal {
+    &__content {}
+
+    &__tabs {
+        &__link {
+            &.active {}
+        }
+    }
+
+    &__items {
+        &-elem {
+            &.active {}
+        }
+    }
+
+    &__form {
+        &-item {}
+
+        &-name {}
+
+        &_input {}
+
+        &-sep {}
+
+        &-hide {}
+
+        &-lost {}
+
+        &-btn {}
+
+        &-login {}
+    }
+}

@@ -1,0 +1,26 @@
+form.modal__form(action="")
+    .modal__form__item 
+        p.modal__form-name Почта
+        input.modal__form-input(type="email" placeholder="Your email") 
+    .modal__form__item 
+        p.modal__form-name Номер телефона
+        input.modal__form-input(type="number" placeholder="Your phone number") 
+    .modal__form__item 
+        p.modal__form-name Пароль
+        .modal__form-sep 
+            input.modal__form-input(type="password" placeholder="Password") 
+            .modal__form-hide 
+                img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
+    .modal__form__item 
+        p.modal__form-name Повторите пароль
+        .modal__form-sep 
+            input.modal__form-input(type="password" placeholder="Repeat password") 
+            .modal__form-hide 
+                img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
+    a.modal__form-login(href="#!")
+        img(src="/assets/images/icons/google-logo.svg", alt="google logo")
+        span Войти через Google 
+    a.modal__form-login(href="#!")
+        img(src="/assets/images/icons/facebook-logo.svg", alt="google logo")
+        span Войти через Facebook
+    button.modal__form-btn(type="submit") Регистрация
