@@ -1,3 +1,4 @@
+include ./footerLinksPath.pug
 footer.footer 
     .container 
         .footer__content 
@@ -7,7 +8,7 @@ footer.footer
                         img(src="/assets/images/icons/call-dark.svg", alt="combo.uz phone numbers")
                         strong Телефоны
                     li.footer__list-item 
-                        a.footer__list-link-se(href="tel:+998951423313") +998 (95) 142 - 33 - 13 
+                        a.footer__list-link-se(href=phone.url)=phone.name
                     li.footer__list-item 
                         span (с 8:00 до 21:00)
                 ul.footer__list 
@@ -15,7 +16,7 @@ footer.footer
                         img(src="/assets/images/icons/message-dark.svg", alt="combo.uz mailbox")
                         strong Почта
                     li.footer__list-item 
-                        a.footer__list-link(href="mailto:info@combo.uz") info@combo.uz 
+                        a.footer__list-link(href=mail.url)=mail.name 
                     li.footer__list-item 
                         span Отдел продаж
                 ul.footer__list 
@@ -23,7 +24,7 @@ footer.footer
                         img(src="/assets/images/icons/location.svg", alt="combo.uz location")
                         strong Адрес
                     li.footer__list-item 
-                        a.footer__list-link(href="https://www.google.com/maps/search/%D0%B3.%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+%D0%90%D0%BB%D0%BC%D0%B0%D0%B7%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9+%D1%80%D0%B0%D0%B9%D0%BE%D0%BD,+%D1%83%D0%BB.%D0%A1%D0%B0%D0%B3%D0%B1%D0%B0%D0%BD+37%2F1/@41.3305483,69.2321323,17z/data=!3m1!4b1?entry=ttu", target="_blank") г.Ташкент, Алмазарский район, ул.Сагбан 37/1
+                        a.footer__list-link(href=location.url, target="_blank")=location.name
                     li.footer__list-item 
                         span Офис
                 ul.footer__list 
