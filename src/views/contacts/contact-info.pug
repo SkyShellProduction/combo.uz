@@ -1,0 +1,33 @@
+include ../common/footerLinksPath.pug
+section.contact-info 
+    .container 
+        h2.contact-info__title Контактная информация
+        .contact-info__content
+            .contact-info__left 
+                p.contact-info__descr Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+                .contact-info__item 
+                    img(src="/assets/images/icons/location.svg", alt="")
+                    strong Адрес
+                    span Офис
+                .contact-info__item.contact-info__item-se 
+                    a.contact-info__link(href=location.url, target="_blank")=location.name
+                .contact-info__item 
+                    img(src="/assets/images/icons/message-dark.svg", alt="")
+                    strong Почта
+                    span Отдел продаж
+                .contact-info__item.contact-info__item-se
+                    a.contact-info__link(href=mail.url)=mail.name 
+                .contact-info__item 
+                    img(src="/assets/images/icons/call-dark.svg", alt="")
+                    strong Телефоны
+                    span (с 8:00 до 21:00)
+                .contact-info__item 
+                    a.contact-info__link-sp(href=phone.url)=phone.name
+                .contact-info__item 
+                    img(src="/assets/images/icons/clock.svg", alt="")
+                    strong Режим работы
+                    span Пн-Пт
+                .contact-info__item 
+                    span.contact-info__link-sp с 9:00 до 19:00
+            .contact-info__right 
+                <iframe class="contact-info__map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2278.4235642013346!2d69.23494108888772!3d41.33066188248639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sru!2s!4v1689594294395!5m2!1sru!2s" width="600" height="450" style="border:0px;" frameBorder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

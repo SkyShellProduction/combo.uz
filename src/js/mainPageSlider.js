@@ -1,21 +1,28 @@
+import { animateDown } from "./swiperDownAnimation";
+
 const mainSlider = document.querySelector(".gallery-projects__slider");
-console.log(mainSlider);
 if (mainSlider) {
     const swiper = new Swiper(mainSlider, {
       grabCursor: true,
-      //   direction: "vertical",
-      effect: "creative",
-      slidesPerView: 3,
-      spaceBetween: 44,
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: [0, 400, 0],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
+      slidesPerView: 1,
+      width: 404,
+      navigation: {
+        nextEl: ".gallery-projects__next",
       },
+      pagination: {
+        el: '.gallery-projects__pagination',
+        clickable: true,
+        bulletActiveClass: 'active',
+        bulletClass: 'gallery-projects__bullet',
+      }
     });
+    animateDown(swiper);
+
+    const btnsAlternate = mainSlider.querySelectorAll('.gallery-projects__alternate');
+    btnsAlternate.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        swiper.slideNext();
+      })
+    })
 }
 

@@ -1,0 +1,37 @@
+.our-clients {
+  padding-bottom: 50px;
+  &__title {
+    color: var(--mainTitleText);
+    font-size: 28px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &__descr {
+    color: var(--mainTitleText);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 20px 0 30px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 430px;
+    width: 100%;
+    padding: 39px;
+    background: var(--whiteColor);
+    display: flex;
+    justify-content: center;
+    img{
+        max-width: 293px;
+        width: 100%;
+    }
+  }
+}
