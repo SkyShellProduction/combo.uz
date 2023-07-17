@@ -1,5 +1,4 @@
 const mainSlider = document.querySelector(".gallery-projects__slider");
-console.log(mainSlider);
 if (mainSlider) {
     const swiper = new Swiper(mainSlider, {
       grabCursor: true,
