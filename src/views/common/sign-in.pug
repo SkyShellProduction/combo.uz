@@ -1,12 +1,12 @@
 form.modal__form(action="")
     .modal__form-item 
         p.modal__form-name Номер телефона или почта
-        input.modal__form-input(type="text" placeholder="Your email") 
+        input.modal__form-input(type="text" placeholder="Your email" autocomplete="email") 
     .modal__form-item 
         p.modal__form-name Пароль
         .modal__form-sep 
-            input.modal__form-input(type="password" placeholder="Password") 
+            input.modal__form-input(type="password" placeholder="Password" autocomplete="new-password") 
             .modal__form-hide 
                 img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
     a.modal__form-lost(href="#!") Забыли пароль?
-    button.modal__form-btn(type="submit") Войти
+    button.modal__form-btn(type="submit" disabled) Войти

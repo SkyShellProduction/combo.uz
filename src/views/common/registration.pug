@@ -1,23 +1,23 @@
 form.modal__form(action="")
     .modal__form-item 
         p.modal__form-name Почта
-        input.modal__form-input(type="email" placeholder="Your email") 
+        input.modal__form-input(type="email" placeholder="Your email" autocomplete="email") 
     .modal__form-item 
         p.modal__form-name Номер телефона
         input.modal__form-input(type="number" placeholder="Your phone number") 
     .modal__form-item 
         p.modal__form-name Пароль
         .modal__form-sep 
-            input.modal__form-input(type="password" placeholder="Password") 
+            input.modal__form-input.modal__form-password(type="password" placeholder="Password" autocomplete="new-password") 
             .modal__form-hide 
                 img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
     .modal__form-item 
         p.modal__form-name Повторите пароль
         .modal__form-sep 
-            input.modal__form-input(type="password" placeholder="Repeat password") 
+            input.modal__form-input.modal__form-password-rep(type="password" placeholder="Repeat password" autocomplete="new-password") 
             .modal__form-hide 
                 img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
-    button.modal__form-btn.modal__form-reg-btn(type="submit") Регистрация
+    button.modal__form-btn.modal__form-reg-btn(type="submit" disabled) Регистрация
     a.modal__form-login(href="#!")
         img(src="/assets/images/icons/google-logo.svg", alt="google logo")
         span Войти через Google 
