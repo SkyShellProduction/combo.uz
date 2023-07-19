@@ -1,11 +1,11 @@
-form.modal__form(action="")
+form.modal__form(action="" method="POST")
     .modal__form-item 
         p.modal__form-name Номер телефона или почта
-        input.modal__form-input(type="text" placeholder="Your email" autocomplete="email") 
+        input.modal__form-input(type="text" placeholder="Your email" autocomplete="email" name="user-email") 
     .modal__form-item 
         p.modal__form-name Пароль
         .modal__form-sep 
-            input.modal__form-input(type="password" placeholder="Password" autocomplete="new-password") 
+            input.modal__form-input(type="password" placeholder="Password" autocomplete="new-password" name="user-password") 
             .modal__form-hide 
                 img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
     a.modal__form-lost(href="#!") Забыли пароль?

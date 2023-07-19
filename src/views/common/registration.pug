@@ -1,20 +1,20 @@
-form.modal__form(action="")
+form.modal__form(action="" method="POST")
     .modal__form-item 
         p.modal__form-name Почта
-        input.modal__form-input(type="email" placeholder="Your email" autocomplete="email") 
+        input.modal__form-input(type="email" placeholder="Your email" autocomplete="email" name="user-email") 
     .modal__form-item 
         p.modal__form-name Номер телефона
-        input.modal__form-input(type="number" placeholder="Your phone number") 
+        input.modal__form-input(type="number" placeholder="Your phone number" name="user-phone") 
     .modal__form-item 
         p.modal__form-name Пароль
         .modal__form-sep 
-            input.modal__form-input.modal__form-password(type="password" placeholder="Password" autocomplete="new-password") 
+            input.modal__form-input.modal__form-password(type="password" placeholder="Password" autocomplete="new-password" name="user-password") 
             .modal__form-hide 
                 img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
     .modal__form-item 
         p.modal__form-name Повторите пароль
         .modal__form-sep 
-            input.modal__form-input.modal__form-password-rep(type="password" placeholder="Repeat password" autocomplete="new-password") 
+            input.modal__form-input.modal__form-password-rep(type="password" placeholder="Repeat password" autocomplete="new-password" name="user-password-repeat") 
             .modal__form-hide 
                 img(src="/assets/images/icons/eye-open.svg", alt="hide/show password")
     button.modal__form-btn.modal__form-reg-btn(type="submit" disabled) Регистрация
