@@ -1,0 +1,34 @@
+.breadcrumbs {
+  padding: 23px 0;
+  background: rgba(15, 158, 216, 0.1);
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: rgba(54, 56, 83, 0.3);
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    img{
+        margin-left: 10px;
+    }
+    &.active{
+        color: var(--mainTitleText);
+    }
+  }
+  &__line{
+    display: block;
+    margin-right: 20px;
+    width: 2px;
+    height: 37px;
+    background: #363853;
+  }
+}

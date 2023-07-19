@@ -5,10 +5,12 @@ mixin breadcrumb(data=[])
                 - for(var i = 0; i < data.length; i++)
                     - var bread = i 
                         if bread < data.length - 1
-                            .breadcrumb__item 
-                                a.breadcrumb__link(href="#!")=data[i]
-                                img(src="/assets/images/icons/right-chevron.svg", alt="") 
+                            .breadcrumbs__item 
+                                a.breadcrumbs__link(href="#!")
+                                    span=data[i]
+                                    img(src="/assets/images/icons/arrow-right-light.svg", alt="") 
                         else
-                            .breadcrumb__item 
-                                span.breadcrumb__line |
-                                a.breadcrumb__link(href="#!")=data[i]
+                            .breadcrumbs__item 
+                                span.breadcrumbs__line 
+                                a.breadcrumbs__link.active(href="#!")
+                                    span=data[i]
