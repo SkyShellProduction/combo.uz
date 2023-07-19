@@ -1,11 +1,11 @@
 - 
     var links = [
-        {name: 'На пластиковые окна', url: '#!'},
-        {name: 'Руллонные', url: '#!'},
-        {name: 'Вертикальные', url: '#!'},
-        {name: 'День-Ночь', url: '#!'},
-        {name: 'Плиссе', url: '#!'},
-        {name: 'Шторы', url: '#!'},
+        {name: 'На пластиковые окна', url: '/goods-page.html'},
+        {name: 'Руллонные', url: '/goods-page.html'},
+        {name: 'Вертикальные', url: '/goods-page.html'},
+        {name: 'День-Ночь', url: '/goods-page.html'},
+        {name: 'Плиссе', url: '/goods-page.html'},
+        {name: 'Шторы', url: '/goods-page.html'},
         {name: 'Авторизация / Регистрация', url: '#!', class: "header__link-sp"},
     ]
 mixin header() 
@@ -23,7 +23,7 @@ mixin header()
                         a.header__link-se(href="#!")
                             img(src="/assets/images/icons/heart.svg", alt="combo.uz favorites")  
                     li.header__list-se-item 
-                        a.header__link-se(href="#!")
+                        a.header__link-se(href="/busket.html")
                             img(src="/assets/images/icons/work.svg", alt="combo.uz busket goods")  
                             span.header__busket-notify.have-goods 2
 
