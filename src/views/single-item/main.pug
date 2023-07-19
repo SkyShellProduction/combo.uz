@@ -4,4 +4,10 @@ include ../common/header.pug
 main.main 
     include ../common/breadcrumbs.pug
     +breadcrumb(['Главная', 'Руллоные шторы', 'NEW O V - 33'])
+    .single 
+        .container 
+            .single__good 
+                include ./single-good-left.pug
+                include ./single-good-right.pug
+            include ./single-content.pug
 include ../common/footer.pug
