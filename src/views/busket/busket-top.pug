@@ -1,0 +1,22 @@
+.busket-top 
+    .busket-top__sep 
+        h3.busket-top__title Корзина
+        p.busket-top__excerpt Изделия на заказ по размерам покупателя, предоплата от 20%
+    .busket-top__table 
+        .busket-top__slugs 
+            strong Наименование товара
+            strong Количество
+            strong Цена
+            strong Итого
+        .busket-top__items 
+            - for (var i = 0; i < 2; i++)
+                .busket-top__elem 
+                    p.busket-top__name Рулонные шторы День-Ночь Уни2 стандарт белый 225
+                    .busket-top__controls 
+                        a.busket-top__control(href="#!") -
+                        output 2 
+                        a.busket-top__control(href="#!") + 
+                    p.busket-top__control.price 100 000 сум
+                    p.busket-top__control.total 200 000 сум
+                    a.busket-top__remove(href="#!")
+                        img(src="/assets/images/icons/trash.svg", alt="remove item icon")
