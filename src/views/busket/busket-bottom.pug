@@ -25,4 +25,18 @@
             .busket-bottom__item 
                 span.busket-bottom__info Комментарии
                 textarea.busket-bottom__input(type="text" name="busket-comment")
-            button.busket-bottom__btn(type="submit") Купить
+    h3.busket-bottom__title Тип доставки
+    .busket-bottom__delivery
+        label.busket-bottom__label
+            input(type="radio" name="busket-delivery-type" value="install,size,delivery")
+            span.busket-bottom__check 
+            span Установка, размер, доставка  
+        label.busket-bottom__label
+            input(type="radio" name="busket-delivery-type" value="install,delivery")
+            span.busket-bottom__check 
+            span Доставка и установка
+        label.busket-bottom__label
+            input(type="radio" name="busket-delivery-type" value="delivery-tashkent")
+            span.busket-bottom__check 
+            span Доставка по городу Ташкент 
+        btn.busket-bottom__btn(type="submit") Купить
