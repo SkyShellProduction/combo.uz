@@ -4,4 +4,11 @@ include ../common/header.pug
 main.main 
     include ../common/breadcrumbs.pug
     +breadcrumb(['Главная', 'Руллоные шторы'])
+    .goods-filters 
+        .container 
+            h2.goods-filters__title Рулонные кассетные COMBO
+            .goods-filters__content 
+                include ./goods-filters.pug
+                include ./goods-filters-cards.pug
+            include ./goods-filters-pagination.pug
 include ../common/footer.pug
