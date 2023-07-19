@@ -30,15 +30,42 @@ form.single__good-right
             span.single__right-info Справа
     strong.single__right-feature Кол-во
     .single__right-sep 
-        input(type="number" name="item-count")
+        select.single__right-select(name="item-count")
+            - for (var i = 1; i < 20; i++)
+                option(value=i)=i 
         span.single__right-info штук
-    .single__right-features-block 
-        strong.single__right-feature Страна производитель: Китай
-        strong.single__right-feature Тип ткани: Полиэстер
-        strong.single__right-feature Свойство: Гладкий
-        strong.single__right-feature Затемнение: 50%
     .single__right-flex 
-        h4.single__right-price Цена: 80 500 сум за 1 м2
+        .single__right-flex-left 
+            strong.single__right-feature Тип карниза
+            .single__right-sep 
+                label.single__right-checkbox     
+                    input(type="radio" value="aluminium" name="item-cornice-type")
+                    span.single__right-check 
+                    span.single__right-info Алюминевый
+                label.single__right-checkbox     
+                    input(type="radio" value="plastic" name="item-cornice-type")
+                    span.single__right-check 
+                    span.single__right-info Пластиковый
+            strong.single__right-feature Тип управления
+            .single__right-sep 
+                label.single__right-checkbox     
+                    input(type="radio" value="manual" name="item-control-type")
+                    span.single__right-check 
+                    span.single__right-info Ручной
+                label.single__right-checkbox     
+                    input(type="radio" value="electro" name="item-control-type")
+                    span.single__right-check 
+                    span.single__right-info С электроприводом
+            strong.single__right-feature Округление
+            .single__right-sep 
+                label.single__right-checkbox     
+                    input(type="radio" value="1sqm" name="item-rounding")
+                    span.single__right-check 
+                    span.single__right-info До 1 квадрата
+                label.single__right-checkbox     
+                    input(type="radio" value="1.5sqm" name="item-rounding")
+                    span.single__right-check 
+                    span.single__right-info До 1.5 квадрата
         button.single__right-btn(type="submit") 
             span В корзину
             span.single__right-icon
