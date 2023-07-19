@@ -1,53 +1,53 @@
 .header-top {
-    background: #F1F1F1;
-    padding: 15px 0;
+  background: #f1f1f1;
+  padding: 15px 0;
 
-    &__items {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      display: block;
+      color: var(--mainTitleText);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      margin-right: 50px;
     }
+  }
 
-    &__left {
-        display: flex;
-        align-items: center;
+  &__right {
+    display: flex;
+    align-items: center;
 
-        &-link {
-            display: block;
-            color: var(--mainTitleText);
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-            margin-right: 50px;
+    &-link {
+      display: flex;
+      align-items: center;
+      margin-left: 60px;
+      color: var(--mainTitleText);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      img {
+        margin-right: 10px;
+      }
+      &-first {
+        span {
+          text-decoration: underline;
         }
+      }
     }
-
-    &__right {
-        display: flex;
-        align-items: center;
-
-        &-link {
-            display: flex;
-            align-items: center;
-            margin-left: 60px;
-            color: var(--mainTitleText);
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-            img{
-                margin-right: 10px;
-            }
-            &-first{
-                span{
-                    text-decoration: underline;
-                }
-            }
-        }
-        &-sp-link{
-            padding: 8px 19px;
-            color: var(--textWhite);
-            background: var(--primaryColor);
-            font-size: 16px;
-        }
+    &-sp-link {
+      padding: 8px 19px;
+      color: var(--textWhite);
+      background: var(--primaryColor);
+      font-size: 16px;
     }
+  }
 }

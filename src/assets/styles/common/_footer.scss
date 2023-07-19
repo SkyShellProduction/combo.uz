@@ -1,112 +1,112 @@
 .footer {
-    background: var(--whiteColor);
-    padding: 65px 0 53px;
+  background: var(--whiteColor);
+  padding: 65px 0 53px;
 
-    &__content {
-        max-width: 1094px;
-        width: 100%;
-        margin: 0 auto;
+  &__content {
+    max-width: 1094px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    gap: 15px;
+  }
+
+  &__middle {
+    margin: 64px 0 73px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    &-list {
+      display: flex;
+      gap: 15px;
     }
 
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        width: 97%;
-        gap: 15px;
+    &-excerpt,
+    &-questions {
+      color: var(--darkText);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 11px;
     }
 
-    &__middle {
-        margin: 64px 0 73px;
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
+    &-link {
+      display: block;
+      margin-right: 50px;
+      color: var(--darkText);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 
-        &-list {
-            display: flex;
-            gap: 15px;
-        }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        &-excerpt,
-        &-questions {
-            color: var(--darkText);
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 22px;
-            margin-bottom: 11px;
-        }
-
-        &-link {
-            display: block;
-            margin-right: 50px;
-            color: var(--darkText);
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-        }
+    &-descr {
+      color: var(--blackText);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.3;
     }
 
-    &__bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
 
-        &-descr {
-            color: var(--blackText);
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-            opacity: 0.3;
-        }
+  &__list {
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      & > img {
+        margin-right: 10px;
+      }
 
-        &-list {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
+      strong {
+        color: var(--mainTitleColor);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+      }
+
+      span {
+        color: rgba(50, 50, 50, 0.5);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
 
-    &__list {
-        &-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            & > img{
-                margin-right: 10px;
-            }
-
-            strong {
-                color: var(--mainTitleColor);
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 22px;
-            }
-
-            span {
-                color: rgba(50, 50, 50, 0.50);
-                font-size: 20px;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
-
-        &-link {
-            color: var(--textPrimary);
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-decoration-line: underline;
-            max-width: 288px;
-            width: 100%;
-            display: block;
-        }
-
-        &-link-se {
-            color: var(--darkText);
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-        }
+    &-link {
+      color: var(--textPrimary);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      max-width: 288px;
+      width: 100%;
+      display: block;
     }
+
+    &-link-se {
+      color: var(--darkText);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 }

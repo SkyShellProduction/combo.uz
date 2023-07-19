@@ -1,27 +1,27 @@
-body{
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-    background: var(--mainBgColor);
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--mainBgColor);
 }
-.container{
-    max-width: calc(1350px + var(--containerPadding) * 2);
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 var(--containerPadding);
+.container {
+  max-width: calc(1350px + var(--containerPadding) * 2);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--containerPadding);
 }
-.main{
-    position: relative;
-    z-index: 5;
-    min-height: 90vh;
+.main {
+  position: relative;
+  z-index: 5;
+  min-height: 90vh;
 }
-img{
-    display: block;   
+img {
+  display: block;
 }
 
-.darkBlueHover{
-    transition: background 0.2s linear;
-    &:hover{
-        background: #0B90C6;
-    }
+.darkBlueHover {
+  transition: background 0.2s linear;
+  &:hover {
+    background: #0b90c6;
+  }
 }

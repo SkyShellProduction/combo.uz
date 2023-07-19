@@ -15,7 +15,7 @@
   &.active {
     opacity: 1;
   }
-  &.zIndex{
+  &.zIndex {
     z-index: 100;
   }
   &__content {
@@ -56,7 +56,7 @@
   &__items {
     &-elem {
       opacity: 0;
-    //   transition: 0.2s linear;
+      //   transition: 0.2s linear;
       position: absolute;
       z-index: 0;
       &.active {
@@ -108,8 +108,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         position: absolute;
         display: block;
         height: 17px;
@@ -118,7 +118,7 @@
         transform: rotate(-45deg);
         opacity: 0;
       }
-      &.active::before{
+      &.active::before {
         opacity: 1;
       }
       img {
@@ -150,12 +150,12 @@
       line-height: 22px;
       margin-top: 41px;
       cursor: pointer;
-      &:disabled{
-        background: #0B90C6;
+      &:disabled {
+        background: #0b90c6;
       }
     }
-    &-reg-btn{
-        margin-top: 0;
+    &-reg-btn {
+      margin-top: 0;
     }
 
     &-login {
@@ -172,7 +172,7 @@
       line-height: normal;
       margin-top: 12px;
       padding: 17px;
-      span{
+      span {
         display: inline-block;
         margin-left: 12px;
       }

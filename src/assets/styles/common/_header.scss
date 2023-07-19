@@ -1,61 +1,60 @@
 .header {
-    &__nav {
-        display: flex;
-        align-items: center;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: 8px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__list-se {
+    width: initial;
+    gap: 16px;
+    display: flex;
+    margin-left: 16px;
+  }
+
+  &__link {
+    display: block;
+    color: var(--mainTitleText);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px;
+    position: relative;
+
+    &:hover,
+    &-sp {
+      color: var(--textPrimary);
     }
+  }
 
-    &__list {
-        display: flex;
-        margin-left: 8px;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+  &__link-se {
+    position: relative;
+  }
+
+  &__busket-notify {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: var(--primaryColor);
+    color: var(--textWhite);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    position: absolute;
+    right: -1px;
+    top: -8px;
+    &.have-goods {
+      display: flex;
     }
-
-    &__list-se {
-        width: initial;
-        gap: 16px;
-        display: flex;
-        margin-left: 16px;
-    }
-
-    &__link {
-        display: block;
-        color: var(--mainTitleText);
-        font-size: 18px;
-        font-weight: 400;
-        line-height: normal;
-        margin-right: 10px;
-        position: relative;
-
-        &:hover,
-        &-sp {
-            color: var(--textPrimary);
-        }
-    }
-
-    &__link-se {
-        position: relative;
-    }
-
-    &__busket-notify {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 18px;
-        height: 18px;
-        background: var(--primaryColor);
-        color: var(--textWhite);
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 22px;
-        position: absolute;
-        right: -1px;
-        top: -8px;
-        &.have-goods{
-            display: flex;
-        }
-    }
-
+  }
 }

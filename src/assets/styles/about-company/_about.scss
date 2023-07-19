@@ -24,14 +24,14 @@
     line-height: 150%;
   }
 
-  &__right{
+  &__right {
     flex-grow: 1;
     overflow: hidden;
   }
-  &__slide{
-    transition: transform .2s linear;
-    img{
-        width: 100%;
+  &__slide {
+    transition: transform 0.2s linear;
+    img {
+      width: 100%;
     }
   }
 }

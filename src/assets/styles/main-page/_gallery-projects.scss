@@ -87,7 +87,7 @@
     line-height: 120%;
   }
 
-  &__alternate{
+  &__alternate {
     position: absolute;
     right: -48px;
     bottom: 0;
@@ -98,8 +98,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
-        width: max-content;
+    img {
+      width: max-content;
     }
   }
 
@@ -139,14 +139,14 @@
     justify-content: center;
     margin: 0 10px;
     cursor: pointer;
-    &::before{
-        content: '';
-        background: #d8d8d8;
-        display: block;
-        width: 11px;
-        height: 11px;
-        position: absolute;
-        border-radius: 50%;
+    &::before {
+      content: "";
+      background: #d8d8d8;
+      display: block;
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      border-radius: 50%;
     }
     &.active {
       border-color: var(--primaryColor);

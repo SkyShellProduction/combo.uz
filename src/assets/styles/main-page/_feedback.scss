@@ -1,55 +1,55 @@
 .feedback {
-    padding-bottom: 102px;
-    &__title {
-        color: #1C1F35;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 600;
-        line-height: normal;
-        margin-bottom: 24px;
-    }
+  padding-bottom: 102px;
+  &__title {
+    color: #1c1f35;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
 
-    &__descr {
-        max-width: 464px;
-        width: 100%;
-        margin: 0 auto;
-        color: #666C89;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 151.523%;
-    }
+  &__descr {
+    max-width: 464px;
+    width: 100%;
+    margin: 0 auto;
+    color: #666c89;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 151.523%;
+  }
 
-    &__form {
-        max-width: 775px;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 24px;
-        display: flex;
-        gap: 32px;
-    }
+  &__form {
+    max-width: 775px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+    display: flex;
+    gap: 32px;
+  }
 
-    &__input {
-        display: block;
-        width: 100%;
-        padding: 22px 26px;
-        border: 1px solid rgba(54, 56, 83, 0.50);
-        color: rgba(0, 0, 0, 0.50);
-        font-size: 16px;
-        line-height: normal;
-    }
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 22px 26px;
+    border: 1px solid rgba(54, 56, 83, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: normal;
+  }
 
-    &__btn {
-        display: block;
-        max-width: 199px;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-        background: var(--primaryColor);
-        color: var(--textWhite);
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 151.523%;
-        cursor: pointer;
-    }
+  &__btn {
+    display: block;
+    max-width: 199px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: var(--primaryColor);
+    color: var(--textWhite);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 151.523%;
+    cursor: pointer;
+  }
 }

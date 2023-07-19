@@ -17,14 +17,14 @@
     font-size: 16px;
     line-height: 22px;
     text-transform: capitalize;
-    img{
-        margin-left: 10px;
+    img {
+      margin-left: 10px;
     }
-    &.active{
-        color: var(--mainTitleText);
+    &.active {
+      color: var(--mainTitleText);
     }
   }
-  &__line{
+  &__line {
     display: block;
     margin-right: 20px;
     width: 2px;
