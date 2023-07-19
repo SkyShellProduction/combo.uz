@@ -1,3 +1,14 @@
-.goods-fitlers__cards 
-    - for (var i = 0; i < 12; i++)
-        include ../main-page/casette-combo-item.pug
+.goods-filters__right 
+    .goods-filters__sort 
+        a.goods-filters__sort__link.active(href="#!")
+            span По цене
+            img(src="/assets/images/icons/arrow-bottom.svg", alt="") 
+        a.goods-filters__sort__link(href="#!")
+            span Новинки
+            img(src="/assets/images/icons/arrow-bottom.svg", alt="") 
+        a.goods-filters__sort__link(href="#!")
+            span По наименованию
+            img(src="/assets/images/icons/arrow-bottom.svg", alt="") 
+    .goods-filters__cards
+        - for (var i = 0; i < 12; i++)
+            include ../main-page/casette-combo-item.pug
