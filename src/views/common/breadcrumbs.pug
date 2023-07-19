@@ -1,15 +1,14 @@
-mixin breadcrumb(data = [])
+mixin breadcrumb(data=[])
     .breadcrumbs 
         .container 
             .breadcrumbs__content 
                 - for(var i = 0; i < data.length; i++)
-                - var bread = i 
-                #bread
-                    if bread < data.length - 1
-                        .breadcrumb__item 
-                            a.breadcrumb__link(href="#!")=data[i]
-                            img(src="/assets/images/icons/right-chevron.svg", alt="") 
-                    else
-                        .breadcrumb__item 
-                            span.breadcrumb__line |
-                            a.breadcrumb__link(href="#!")=data[i]
+                    - var bread = i 
+                        if bread < data.length - 1
+                            .breadcrumb__item 
+                                a.breadcrumb__link(href="#!")=data[i]
+                                img(src="/assets/images/icons/right-chevron.svg", alt="") 
+                        else
+                            .breadcrumb__item 
+                                span.breadcrumb__line |
+                                a.breadcrumb__link(href="#!")=data[i]
