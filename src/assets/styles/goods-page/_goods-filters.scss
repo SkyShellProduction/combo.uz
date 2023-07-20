@@ -1,3 +1,86 @@
-.goods-filters{
-    
+.goods-filters {
+  padding: 30px 0 9px;
+  &__title {
+    color: var(--mainTitleText);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 28px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+  &__name {
+    color: var(--mainTitleText);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
+  &__left{
+    max-width: 315px;
+    width: 100%;  
+  }
+  &__right {
+    flex-grow: 1;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 39px;
+    &-link {
+      padding: 4px 6px 4px 12px;
+      display: flex;
+      align-items: center;
+      color: var(--mainTitleText);
+      font-size: 16px;
+      line-height: 150%;
+      background: var(--whiteColor);
+      span {
+        display: inline-block;
+        margin-right: 6px;
+      }
+      img {
+        transition: transform 0.2s linear;
+      }
+      &.active {
+        background: rgba(15, 158, 216, 0.15);
+        img {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    margin-top: 69px;
+    justify-content: center;
+    align-items: center;
+    &-item {
+      margin: 0 6px;
+    }
+    &-btn {
+      display: block;
+      padding: 9.5px 17px;
+      color: var(--textWhite);
+      font-size: 12.667px;
+      font-weight: 300;
+      line-height: normal;
+      background: rgba(54, 56, 83, 0.30);
+      text-transform: capitalize;
+      &.active{
+        background: var(--mainTitleText);
+      }
+    }
+  }
 }
