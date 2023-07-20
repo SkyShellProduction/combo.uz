@@ -1,19 +1,22 @@
 .goods-filters__left 
-    h3.goods-filters__name Фильтры
     .goods-filters__accordion
-        .goods-filters__accordion-item 
-            h4.goods-filters__accrodion-name 
+        .goods-filters__accordion-item.open
+            h4.goods-filters__accordion-name 
                 span Каталог
                 img(src="/assets/images/icons/arrow-bottom.svg", alt="")
             .goods-filters__accordion-content 
                 ul.goods-filters__accordion-list
+                    li.goods-filters__accordion-elem
+                            a.goods-filters__accordion-link.active(href="#!")
+                                span Exclusive     
+                                span Кол-во(31)
                     - for (var i = 0; i < 12; i++)
                         li.goods-filters__accordion-elem
                             a.goods-filters__accordion-link(href="#!")
                                 span Exclusive     
                                 span Кол-во(31)     
         .goods-filters__accordion-item 
-            h4.goods-filters__accrodion-name 
+            h4.goods-filters__accordion-name 
                 span Цвет
                 img(src="/assets/images/icons/arrow-bottom.svg", alt="")
             .goods-filters__accordion-content 
@@ -24,7 +27,7 @@
                                 span Exclusive     
                                 span Кол-во(31)     
         .goods-filters__accordion-item 
-            h4.goods-filters__accrodion-name 
+            h4.goods-filters__accordion-name 
                 span Затемнение
                 img(src="/assets/images/icons/arrow-bottom.svg", alt="")
             .goods-filters__accordion-content 
@@ -35,7 +38,7 @@
                                 span Exclusive     
                                 span Кол-во(31)    
         .goods-filters__accordion-item  
-            h4.goods-filters__accrodion-name 
+            h4.goods-filters__accordion-name 
                 span Производитель
                 img(src="/assets/images/icons/arrow-bottom.svg", alt="")
             .goods-filters__accordion-content 
@@ -46,7 +49,7 @@
                                 span Exclusive     
                                 span Кол-во(31)     
         .goods-filters__accordion-item  
-            h4.goods-filters__accrodion-name 
+            h4.goods-filters__accordion-name 
                 span Сортировка
                 img(src="/assets/images/icons/arrow-bottom.svg", alt="")
             .goods-filters__accordion-content 
