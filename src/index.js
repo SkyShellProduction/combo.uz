@@ -4,3 +4,4 @@ import "./js/aboutSlider";
 import "./js/modal";
 import "./js/tabs";
 import "./js/formValidtaion";
+import "./js/accordion";
