@@ -22,6 +22,9 @@
     }
     &.active {
       color: var(--mainTitleText);
+      span {
+        font-family: "Poppins";
+      }
     }
   }
   &__line {

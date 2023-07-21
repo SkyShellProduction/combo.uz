@@ -19,9 +19,9 @@
     display: flex;
     gap: 30px;
   }
-  &__left{
+  &__left {
     max-width: 315px;
-    width: 100%;  
+    width: 100%;
   }
   &__right {
     flex-grow: 1;
@@ -73,12 +73,13 @@
       display: block;
       padding: 9.5px 17px;
       color: var(--textWhite);
+      font-family: "Poppins";
       font-size: 12.667px;
       font-weight: 300;
       line-height: normal;
-      background: rgba(54, 56, 83, 0.30);
+      background: rgba(54, 56, 83, 0.3);
       text-transform: capitalize;
-      &.active{
+      &.active {
         background: var(--mainTitleText);
       }
     }
