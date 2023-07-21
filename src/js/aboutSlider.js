@@ -4,8 +4,16 @@ const aboutSlider = document.querySelector(".about__slider");
 if (aboutSlider) {
     const swiper = new Swiper(aboutSlider, {
       grabCursor: true,
-      slidesPerView: 3,
+      slidesPerView: 1.3,
       spaceBetween: 30,
+      breakpoints: {
+        520: {
+          slidesPerView: 3,
+        },
+        400: {
+          slidesPerView: 2,
+        }
+      }
     });
     animateDown(swiper);
 }
