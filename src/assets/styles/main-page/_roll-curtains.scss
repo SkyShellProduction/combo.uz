@@ -86,11 +86,24 @@
     transition: 0.3s linear;
     transform: translateX(10px);
     flex-shrink: 0;
+    max-width: 150px;
+    width: 100%;
+    img{
+      width: 100%;
+    }
   }
   &__extra {
     margin: 30px 0 50px;
     .roll-curtains__title {
       margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .roll-curtains {
+    &__img{
+      max-width: 120px;
     }
   }
 }
