@@ -5,7 +5,7 @@ if (mainSlider) {
     const swiper = new Swiper(mainSlider, {
       grabCursor: true,
       slidesPerView: 1,
-      width: 404,
+      width: 230,
       navigation: {
         nextEl: ".gallery-projects__next",
       },
@@ -14,6 +14,14 @@ if (mainSlider) {
         clickable: true,
         bulletActiveClass: 'active',
         bulletClass: 'gallery-projects__bullet',
+      },
+      breakpoints: {
+        1016: {
+          width: 404,
+        },
+        680: {
+          width: 300
+        }
       }
     });
     animateDown(swiper);
