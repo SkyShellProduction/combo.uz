@@ -1,0 +1,91 @@
+.busket-bottom {
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__sep {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    width: 100%;
+  }
+  &__info {
+    display: block;
+    color: var(--mainTitleText);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    line-height: 137.5%;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    border: 1px solid #363853;
+    font-size: 16px;
+    line-height: 137.5%;
+    padding: 15px 20px;
+  }
+  &__textarea {
+    resize: none;
+  }
+
+  &__delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__label {
+    color: var(--mainTitleText);
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ .busket-bottom__check::before {
+      background: #0095ff;
+    }
+    input[type="radio"]:checked ~ .busket-bottom__check::before {
+      background: #0095ff;
+    }
+  }
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    margin-right: 12px;
+    position: relative;
+    border: 1px solid #0095ff;
+    background: #fff;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 75%;
+      height: 75%;
+      background: transparent;
+    }
+  }
+
+  &__btn {
+    max-width: 315px;
+    width: 100%;
+    padding: 16px;
+    background: var(--primaryColor);
+    color: var(--textWhite);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 137.5%;
+    cursor: pointer;
+  }
+}

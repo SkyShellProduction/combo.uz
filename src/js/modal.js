@@ -8,10 +8,12 @@ if (modal && headerLinkOpen) {
     e.preventDefault();
     modal.removeEventListener("transitionend", removeZIndex);
     modal.classList.add("active", "zIndex");
+    document.body.style.overflow = "hidden";
   });
   
   modal.addEventListener("click", function () {
     this.classList.remove("active");
+    document.body.style.overflow = "";
     modal.addEventListener("transitionend", removeZIndex);
   });
   

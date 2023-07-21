@@ -1,0 +1,42 @@
+.busket-middle {
+  margin: 50px 0 60px;
+  background: rgba(15, 158, 216, 0.1);
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__ways {
+    color: rgba(54, 56, 83, 0.8);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 137.5%;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+  }
+
+  &__select {
+    display: block;
+    padding: 8px 13px;
+    color: var(--mainTitleText);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: "clig" off, "liga" off;
+    text-transform: capitalize;
+    margin-left: 15px;
+  }
+
+  &__total {
+    background: rgba(15, 158, 216, 0.5);
+    padding: 31px 17px;
+    color: var(--textWhite);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 137.5%;
+  }
+}
