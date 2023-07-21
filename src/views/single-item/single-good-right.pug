@@ -1,8 +1,8 @@
-form.single__good-right
+form.single__right
     h2.single__right-title NEW O V - 33
-    strong.single__right-feature Размер
-    .single__right-sep 
-        .single__right__chose 
+    strong.single__right-feature.size Размер
+    .single__right-sep.size 
+        .single__right-chose 
             span.single__right-info ширина
             select.single__right-select(name="item-width")
                 option(value="2мм" selected) 2мм  
@@ -10,7 +10,7 @@ form.single__good-right
                 option(value="6мм") 6мм  
                 option(value="8мм") 8мм  
                 option(value="10мм") 10мм  
-        .single__right__chose 
+        .single__right-chose 
             span.single__right-info Длина
             select.single__right-select(name="item-length")
                 option(value="54мм" selected) 54мм  
@@ -18,56 +18,56 @@ form.single__good-right
                 option(value="58мм") 58мм  
                 option(value="60мм") 60мм  
                 option(value="62мм") 60мм  
-    strong.single__right-feature Управление
-    .single__right-sep 
-        label.single__right-checkbox     
+    strong.single__right-feature.control Управление
+    .single__right-sep.control 
+        label.single__right-label     
             input(type="radio" value="left" name="item-control")
             span.single__right-check 
             span.single__right-info Слева
-        label.single__right-checkbox     
+        label.single__right-label     
             input(type="radio" value="right" name="item-control")
             span.single__right-check 
             span.single__right-info Справа
-    strong.single__right-feature Кол-во
-    .single__right-sep 
+    strong.single__right-feature.count Кол-во
+    .single__right-sep.count 
         select.single__right-select(name="item-count")
             - for (var i = 1; i < 20; i++)
                 option(value=i)=i 
         span.single__right-info штук
     .single__right-flex 
         .single__right-flex-left 
-            strong.single__right-feature Тип карниза
+            strong.single__right-feature.type-cornise Тип карниза
             .single__right-sep 
-                label.single__right-checkbox     
+                label.single__right-label     
                     input(type="radio" value="aluminium" name="item-cornice-type")
                     span.single__right-check 
                     span.single__right-info Алюминевый
-                label.single__right-checkbox     
+                label.single__right-label     
                     input(type="radio" value="plastic" name="item-cornice-type")
                     span.single__right-check 
                     span.single__right-info Пластиковый
-            strong.single__right-feature Тип управления
+            strong.single__right-feature.type-control Тип управления
             .single__right-sep 
-                label.single__right-checkbox     
+                label.single__right-label     
                     input(type="radio" value="manual" name="item-control-type")
                     span.single__right-check 
                     span.single__right-info Ручной
-                label.single__right-checkbox     
+                label.single__right-label     
                     input(type="radio" value="electro" name="item-control-type")
                     span.single__right-check 
                     span.single__right-info С электроприводом
-            strong.single__right-feature Округление
+            strong.single__right-feature.rounding Округление
             .single__right-sep 
-                label.single__right-checkbox     
+                label.single__right-label     
                     input(type="radio" value="1sqm" name="item-rounding")
                     span.single__right-check 
                     span.single__right-info До 1 квадрата
-                label.single__right-checkbox     
+                label.single__right-label     
                     input(type="radio" value="1.5sqm" name="item-rounding")
                     span.single__right-check 
                     span.single__right-info До 1.5 квадрата
         button.single__right-btn(type="submit") 
-            span В корзину
+            strong В корзину
             span.single__right-icon
                 img(src="/assets/images/icons/work-light.svg", alt="")
         

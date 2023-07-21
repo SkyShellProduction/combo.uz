@@ -1,3 +1,7 @@
 .single{
-    
+    padding: 37px 0 61px;   
+    &__good{
+        display: flex;
+        gap: 30px;
+    }
 }
