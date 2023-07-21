@@ -1,7 +1,59 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--mainBgColor);
   &__nav {
     display: flex;
     align-items: center;
+  }
+  &__items{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: none;
+    .bars{
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: #000;
+      margin: 3px 0;
+      transition: width .2s linear;
+    }
+    &.active{
+      .bars.second{
+        width: 60%;
+      }
+      .bars.third{
+        width: 35%;
+      }
+    }
+  }
+  &__abs{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  &__close{
+    display: none;
   }
 
   &__list {
@@ -55,6 +107,65 @@
     top: -8px;
     &.have-goods {
       display: flex;
+    }
+  }
+}
+
+@media(max-width: 1284px) {
+  .header {
+    &__list-se, &__list{
+      margin-left: 0;
+    }
+    .logo img {
+      width: 180px;
+    }
+  }
+}
+
+@media(max-width: 1216px) {
+  .header {
+    &__btn{
+      display: flex;
+    }
+    &__nav{
+      justify-content: space-between;
+    }
+    &__items{
+      position: fixed;
+      top: 0;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+      width: 200px;
+      padding: 70px 15px;
+      right: 0;
+      z-index: 110;
+      transition: right .2s linear;
+      right: -200px;
+      background: var(--mainBgColor);
+      &.active{
+        right: 0;
+      }
+    }
+    &__list{
+      flex-direction: column;
+    }
+    &__link{
+      margin-bottom: 20px;
+    }
+    &__close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      img{
+        width: 30px;
+      }
     }
   }
 }
