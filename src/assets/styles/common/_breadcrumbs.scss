@@ -4,6 +4,7 @@
   &__content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__item {
     margin-right: 9px;

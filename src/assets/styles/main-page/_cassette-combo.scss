@@ -61,7 +61,6 @@
 
   &__actions {
     display: flex;
-    gap: 10px;
   }
 
   &__favorite {
@@ -72,6 +71,7 @@
     height: 47px;
     border: 1px solid var(--primaryColor);
     transition: background 0.2s linear;
+    margin-right: 10px;
 
     &:hover,
     &.isFavorite {

@@ -40,3 +40,19 @@
     line-height: 137.5%;
   }
 }
+
+@media (max-width: 650px) {
+  .busket-middle {
+    padding-top: 15px;
+    &__content{
+      flex-direction: column;
+      gap: 0;
+    }
+    &__ways{
+      margin-bottom: 15px;
+    }
+    &__total{
+      padding: 15px;
+    }
+  }
+}

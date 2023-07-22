@@ -66,6 +66,7 @@
     position: relative;
     border: 1px solid #0095ff;
     background: #fff;
+    flex-shrink: 0;
     &::before {
       content: "";
       position: absolute;
@@ -87,5 +88,20 @@
     font-weight: 700;
     line-height: 137.5%;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 650px) {
+  .busket-bottom {
+   &__sep{
+    flex-direction: column;
+   }
+   &__delivery{
+    flex-direction: column;
+    gap: 0;
+   }
+   &__label{
+    margin-bottom: 15px;
+   }
   }
 }
