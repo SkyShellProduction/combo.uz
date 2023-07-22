@@ -57,3 +57,24 @@
     }
   }
 }
+
+@media (max-width: 950px) {
+  .single__left {
+    margin-bottom: 30px;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: none;
+    gap: 0;
+    &-images{
+      margin-top: 30px;
+      flex-direction: row;
+      gap: 0;
+      max-height: none;
+      max-width: 800px;
+    }
+    &-item{
+      flex-shrink: 0;
+      margin-right: 30px;
+    }
+  }
+}
