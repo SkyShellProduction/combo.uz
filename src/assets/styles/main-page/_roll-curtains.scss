@@ -17,93 +17,63 @@
   &__card {
     max-width: 430px;
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    background: rgba(231, 231, 231, 0.8);
+  }
+
+  &__img {
+    background: #E7E7E7;
+    padding: 38px 10px 20px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 27px;
-    border: 1px solid transparent;
-    &:hover {
-      border-color: var(--primaryColor);
-      .roll-curtains__img {
-        transform: translateX(-30px);
-      }
+    justify-content: center;
+
+    img {
+      max-width: 290px;
+      width: 100%;
     }
   }
 
   &__text {
-    height: 100%;
-    padding-top: 44px;
-    padding-bottom: 35px;
-    color: var(--mainTitleText);
+    padding: 11px 17px 10px 22px;
+    background: #0095FF;
+
   }
 
   &__discount {
+    color: var(--textWhite);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'clig'off, 'liga'off;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+    line-height: 137.5%;
     text-transform: capitalize;
-    opacity: 0.5;
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  &__sep {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
   }
 
   &__name {
-    margin: 13px 0 17px;
+    color: var(--textWhite);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'clig'off, 'liga'off;
     font-size: 24px;
-    font-weight: 700;
     line-height: 22px;
     text-transform: capitalize;
   }
 
   &__price {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-transform: capitalize;
-    display: flex;
-    margin-bottom: 25px;
-
-    sup {
-      font-size: 70%;
-      line-height: 100%;
-    }
-  }
-
-  &__link {
-    display: block;
-    padding: 6px 15px 6px 21px;
-    background: var(--primaryColor);
-    width: max-content;
     color: var(--textWhite);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+    line-height: 137.5%;
     text-transform: capitalize;
-    transition: background 0.2s linear;
   }
-  &__img {
-    transition: 0.3s linear;
-    transform: translateX(10px);
-    flex-shrink: 0;
-    max-width: 150px;
-    width: 100%;
-    img{
-      width: 100%;
-    }
+  &__extra{
+    margin: 30px 0 61px;
   }
-  &__extra {
-    margin: 30px 0 50px;
-    .roll-curtains__title {
-      margin-bottom: 50px;
-    }
-  }
-}
 
-@media (max-width: 500px) {
-  .roll-curtains {
-    &__img{
-      max-width: 120px;
-    }
-  }
+
 }
