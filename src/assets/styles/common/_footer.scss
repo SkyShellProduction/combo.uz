@@ -63,6 +63,16 @@
       align-items: center;
       gap: 30px;
     }
+    &-link{
+      &:hover{
+        svg{
+          fill: var(--primaryColor);
+          path{
+            fill: var(--whiteColor);
+          }
+        }
+      }
+    }
   }
 
   &__list {

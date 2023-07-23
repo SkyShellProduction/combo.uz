@@ -6,6 +6,7 @@ if (aboutSlider) {
       grabCursor: true,
       slidesPerView: 1.3,
       spaceBetween: 30,
+      loop: true,
       breakpoints: {
         520: {
           slidesPerView: 3,

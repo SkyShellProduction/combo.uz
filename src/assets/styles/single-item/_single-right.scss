@@ -90,14 +90,15 @@
     margin-right: 12px;
     width: 17px;
     height: 17px;
+    flex-shrink: 0;
     border: 1px solid rgba(54, 56, 83, 0.5);
     background: #fff;
 
     &::before {
       content: "";
       display: block;
-      width: 75%;
-      height: 75%;
+      width: 11px;
+      height: 11px;
       background: transparent;
     }
   }
