@@ -5,7 +5,7 @@ if (mainSlider) {
     const swiper = new Swiper(mainSlider, {
       grabCursor: true,
       slidesPerView: 1.2,
-      spaceBetween: 30,
+      // spaceBetween: 30,
       width: 230,
       loop: true,
       navigation: {
