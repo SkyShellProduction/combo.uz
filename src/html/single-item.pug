@@ -6,6 +6,14 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="description", content="Страница товара #{название} ComboUz")
         include ../views/common/head.pug
+        meta(property="og:type" content="website")
+        meta(property="og:site_name" content="Combo.uz")
+        meta(property="og:title" content="Страница товара {name}")
+        meta(property="og:description" content="Описание")
+        meta(property="og:locale" content="ru_RU")
+        meta(property="og:image" content="/assets/images/single-item/full-image.png")
+        meta(property="og:image:width" content="300")
+        meta(property="og:image:height" content="300")
         title Combo.uz Страница товара {название}
     body
         include ../views/single-item/main.pug
