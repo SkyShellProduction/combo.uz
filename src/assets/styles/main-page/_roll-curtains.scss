@@ -20,7 +20,8 @@
   }
 
   &__img {
-    background: #E7E7E7;
+    position: relative;
+    background: #e7e7e7;
     padding: 38px 10px 20px;
     width: 100%;
     display: flex;
@@ -31,17 +32,32 @@
       width: 100%;
     }
   }
+  &__discount-abs {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 19px;
+    color: var(--primaryColor);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    border: 1px solid #0F9ED8;
+    z-index: 2;
+    max-width: 173px;
+    width: 100%;
+    text-align: center;
+  }
 
   &__text {
     padding: 11px 17px 10px 22px;
-    background: #0095FF;
-
+    background: #0095ff;
   }
 
   &__discount {
     color: var(--textWhite);
     font-variant-numeric: lining-nums proportional-nums;
-    font-feature-settings: 'clig'off, 'liga'off;
+    font-feature-settings: "clig" off, "liga" off;
     font-size: 16px;
     line-height: 137.5%;
     text-transform: capitalize;
@@ -53,13 +69,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
   }
 
   &__name {
     color: var(--textWhite);
     font-variant-numeric: lining-nums proportional-nums;
-    font-feature-settings: 'clig'off, 'liga'off;
+    font-feature-settings: "clig" off, "liga" off;
     font-size: 24px;
     line-height: 22px;
     text-transform: capitalize;
@@ -75,5 +90,4 @@
   &__extra {
     margin: 30px 0 61px;
   }
-
 }

@@ -7,6 +7,8 @@ mixin roll-curtains(count=3, extraClass='')
                     .roll-curtains__card 
                         a.roll-curtains__img(href="/single-item.html") 
                             img(src="/assets/images/main-page/roll-curtains.png", alt="roll-curtains Combo.uz")
+                            if (i === 0)
+                                span.roll-curtains__discount-abs СКИДКА 15%
                         .roll-curtains__text 
                             span.roll-curtains__discount Скидка до 15%
                             .roll-curtains__sep 
