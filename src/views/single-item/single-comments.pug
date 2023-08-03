@@ -1,0 +1,17 @@
+section.single-comments 
+    h3.single-comments__title Комментарии
+    .single-comments__content 
+        form(action="").single-comments__form
+            .single-comments__user 
+                img.single-comments__avatar(src="/assets/images/single-item/user.png", alt="user-avatar") 
+                strong.single-comments__fullname Игорь Зубарев
+            textarea(name="user-comment" placeholder="Оставьте комментарий").single-comments__textarea
+            button.single-comments__btn.darkBlueHover Отправить
+        .single-comments__block 
+            .single-comments__item 
+                .single-comments__user 
+                    img.single-comments__avatar(src="/assets/images/single-item/user-2.png", alt="user-avatar") 
+                    strong.single-comments__fullname Игорь Зубарев 
+                p.single-comments__descr I really appreciate the insights and perspective shared in this article. It's definitely given me something to think about and has helped me see things from a different angle. Thank you for writing and sharing!
+        a.single-comments__loadmore(href="#!") Загрузить еще 
+

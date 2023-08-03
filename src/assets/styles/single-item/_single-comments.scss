@@ -1,0 +1,91 @@
+.single-comments {
+  position: relative;
+  padding-top: 30px;
+  &__title {
+    color: var(--blackText);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    border-radius: 8px;
+    background: var(--whiteColor);
+    padding: 30px;
+  }
+  &__form {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #0089ff;
+    box-shadow: 0px 4px 8px 0px rgba(10, 58, 100, 0.15);
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__fullname {
+    color: var(--blackText);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    margin-left: 8px;
+  }
+  &__textarea,
+  &__descr {
+    color: var(--blackText);
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    background: transparent;
+    line-height: 175%;
+    word-wrap: break-word;
+  }
+  &__textarea {
+    resize: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  &__btn {
+    display: block;
+    margin-left: auto;
+    background: var(--primaryColor);
+    color: var(--textWhite);
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175%;
+    cursor: pointer;
+  }
+  &__block {
+    margin: 40px 0;
+  }
+  &__loadmore {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: var(--blackText);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid #e0e0e1;
+    background: #f1f2f3;
+  }
+}
+
+@media (max-width: 500px) {
+  .single-comments {
+    &__content {
+      padding: 30px 15px;
+    }
+    &__form {
+      padding: 10px;
+    }
+    &__textarea {
+      height: 100px;
+    }
+  }
+}
