@@ -9,6 +9,9 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 var(--containerPadding);
+  &.full {
+    max-width: none;
+  }
 }
 .main {
   position: relative;

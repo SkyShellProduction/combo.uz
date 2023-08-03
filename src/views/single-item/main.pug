@@ -5,7 +5,10 @@ main.main
     include ../common/breadcrumbs.pug
     +breadcrumb(['Главная', 'Руллоные шторы', 'NEW O V - 33'])
     section.single
-        .container 
+        include ../goods-page/goods-filters.pug
+        button.goods-filters__toggle 
+                img(src="/assets/images/icons/filtering.svg", alt="")
+        .container.single__container
             .single__good 
                 include ./single-good-left.pug
                 include ./single-good-right.pug
