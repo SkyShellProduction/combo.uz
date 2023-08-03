@@ -93,15 +93,18 @@
 
 @media (max-width: 650px) {
   .busket-bottom {
-   &__sep{
-    flex-direction: column;
-   }
-   &__delivery{
-    flex-direction: column;
-    gap: 0;
-   }
-   &__label{
-    margin-bottom: 15px;
-   }
+    &__title {
+      line-height: normal;
+    }
+    &__sep {
+      flex-direction: column;
+    }
+    &__delivery {
+      flex-direction: column;
+      gap: 0;
+    }
+    &__label {
+      margin-bottom: 15px;
+    }
   }
 }

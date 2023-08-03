@@ -29,9 +29,9 @@
     padding: 13px 25px 10px;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-}
+  }
 
-&__elem {
+  &__elem {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 10px;
@@ -48,28 +48,29 @@
     font-size: 18px;
     line-height: 150%;
   }
-  &__name{
+  &__name {
     max-width: 331px;
     width: 100%;
   }
 
-  &__controls{
+  &__controls {
     display: flex;
     align-items: center;
   }
-  &__count{
+  &__count {
     display: block;
     margin: 0 10px;
   }
-  &__minus, &__plus{
+  &__minus,
+  &__plus {
     display: block;
     padding: 6px;
     border: 1px solid #363853;
   }
 
-  &__remove{
+  &__remove {
     display: block;
-    background: #FF6230;
+    background: #ff6230;
     padding: 6px;
     width: max-content;
     position: absolute;
@@ -77,13 +78,12 @@
   }
 }
 
-
 @media (max-width: 880px) {
   .busket-top {
-    &__slugs{
+    &__slugs {
       display: none;
     }
-    &__elem{
+    &__elem {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -91,23 +91,28 @@
 
 @media (max-width: 650px) {
   .busket-top {
-   &__sep{
-    flex-direction: column;
-    align-items: flex-start;
-   }
-   &__title{
-    margin-bottom: 15px;
-   }
+    &__sep {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
   }
 }
 
 @media (max-width: 470px) {
   .busket-top {
-   &__elem{
-    padding: 10px;
-   }
-   &__remove{
-    right: 10px;
-   }
+    &__elem {
+      padding: 10px;
+    }
+    &__plus,
+    &__minus {
+      padding: 3px;
+    }
+    &__remove {
+      right: 10px;
+      transform: translateY(-20px);
+    }
   }
 }
