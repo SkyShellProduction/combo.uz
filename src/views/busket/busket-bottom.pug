@@ -7,20 +7,20 @@
                 input.busket-bottom__input(type="text" name="busket-surname")
             .busket-bottom__item 
                 span.busket-bottom__info Имя
-                input.busket-bottom__input(type="text" name="busket-name")
+                input.busket-bottom__input(type="text" name="busket-name" required)
             .busket-bottom__item 
                 span.busket-bottom__info Почта
-                input.busket-bottom__input(type="email" name="busket-email")
+                input.busket-bottom__input(type="email" name="busket-email" required)
         .busket-bottom__sep 
             .busket-bottom__item 
                 span.busket-bottom__info Телефон
-                input.busket-bottom__input(type="number" name="busket-phone")
+                input.busket-bottom__input(type="number" name="busket-phone" required)
             .busket-bottom__item 
                 span.busket-bottom__info Тип монтажа
                 input.busket-bottom__input(type="text" name="busket-montage")
             .busket-bottom__item 
                 span.busket-bottom__info Адрес
-                input.busket-bottom__input(type="text" name="busket-address")
+                input.busket-bottom__input(type="text" name="busket-address" required)
         .busket-bottom__sep 
             .busket-bottom__item 
                 span.busket-bottom__info Комментарии
@@ -28,15 +28,15 @@
     h3.busket-bottom__title.busket-top__title Тип доставки
     .busket-bottom__delivery
         label.busket-bottom__label
-            input(type="radio" name="busket-delivery-type" value="install,size,delivery")
+            input(type="radio" name="busket-delivery-type" value="install,size,delivery" required)
             span.busket-bottom__check 
             span Установка, размер, доставка  
         label.busket-bottom__label
-            input(type="radio" name="busket-delivery-type" value="install,delivery")
+            input(type="radio" name="busket-delivery-type" value="install,delivery" required)
             span.busket-bottom__check 
             span Доставка и установка
         label.busket-bottom__label
-            input(type="radio" name="busket-delivery-type" value="delivery-tashkent")
+            input(type="radio" name="busket-delivery-type" value="delivery-tashkent" required)
             span.busket-bottom__check 
             span Доставка по городу Ташкент 
-        btn.busket-bottom__btn.darkBlueHover(type="submit") Купить
+        button.busket-bottom__btn.darkBlueHover(type="submit") Купить
