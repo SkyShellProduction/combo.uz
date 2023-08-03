@@ -32,3 +32,24 @@ if (singleImage && singleImageItems && singleImageBlock && singleImageZoom) {
     singleImageZoom.classList.remove("show");
   });
 }
+
+const single = document.querySelector(".single");
+const singleSelects = single?.querySelectorAll(".single__right-select");
+
+if (singleSelects) {
+  let timer;
+  singleSelects.forEach((select) => {
+    select.addEventListener("change", (e) => {
+      const parent = e.target.closest(".single__right-chose");
+      const hint = parent?.querySelector(".single__right-hint-abs");
+      if (hint) {
+        hint.classList.add("show");
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          timer = undefined;
+          hint.classList.remove("show");
+        }, 2000);
+      }
+    })
+  })
+}
