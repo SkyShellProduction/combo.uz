@@ -7,5 +7,5 @@ import "./js/formValidtaion";
 import "./js/accordion";
 import "./js/singlePage";
 import "./js/headerMenu";
-import "./js/filtersToggle";
+// import "./js/filtersToggle";
 import "./js/busket";

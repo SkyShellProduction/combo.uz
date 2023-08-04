@@ -138,19 +138,18 @@
 
 @media (max-width: 764px) {
   .goods-filters {
-    &__left {
-      position: fixed;
-      z-index: 20;
-      background: var(--mainBgColor);
-      left: -250px;
-      transition: left .2s linear;
-      background: var(--mainBgColor);
-      height: 100%;
-      max-height: 100vh;
-      overflow: auto;
-      &.active{
-        left: 0;
-      }
+    &__content{
+      flex-direction: column;
+    }
+    &__left{
+      max-width: none;
+    }
+    &__accordion-list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__accordion-link{
+      margin: 7.5px;
     }
     &__name{
       display: none;
@@ -159,14 +158,15 @@
       margin-bottom: 20px;
       line-height: normal;
     }
-    &__toggle{
-      display: block;
-    }
   }
 }
 
 @media (max-width: 484px) {
   .goods-filters {
+    &__accordion-link{
+      font-size: 12px;
+      margin: 3px;
+    }
     &__sort{
       flex-direction: column;
       align-items: flex-start;
