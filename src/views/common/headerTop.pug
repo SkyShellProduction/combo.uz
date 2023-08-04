@@ -1,21 +1,35 @@
-.header-top 
-    .container 
-        .header-top__items 
-            ul.header-top__left
-                li.header-top__left-item 
-                    a.header-top__left-link(href="/about-company.html") О компании 
-                li.header-top__left-item 
-                    a.header-top__left-link(href="/contacts.html") Контакты 
-                li.header-top__left-item 
-                    a.header-top__left-link(href="/contacts.html") Портфолио 
-            ul.header-top__right   
-                li.header-top__right-item 
-                    a.header-top__right-link.header-top__right-link-first(href="mailto:info@combo.uz") 
-                        img(src="/assets/images/icons/message.svg", alt="combo.uz mail")
-                        span info@combo.uz 
-                li.header-top__right-item 
-                    a.header-top__right-link(href="tel:+998951423313") 
-                        img(src="/assets/images/icons/call.svg", alt="combo.uz phone number")
-                        span +998 (95) 142 - 33 - 13 
-                li.header-top__right-item 
-                    a.header-top__right-link.header-top__right-sp-link.darkBlueHover(href="#!") Заказать звонок 
+header.header-top 
+    a.logo(href="/")
+        img(src="/assets/images/icons/logo.svg", alt="combo.uz logo") 
+    .header-top__items.header__items 
+        ul.header-top__left
+            li.header-top__left-item 
+                a.header-top__left-link(href="/about-company.html") О компании 
+            li.header-top__left-item 
+                a.header-top__left-link(href="/contacts.html") Контакты 
+            li.header-top__left-item 
+                a.header-top__left-link(href="/contacts.html") Портфолио 
+        ul.header-top__right   
+            li.header-top__right-item 
+                a.header-top__right-link.header-top__right-link-first(href="mailto:info@combo.uz") 
+                    img(src="/assets/images/icons/message.svg", alt="combo.uz mail")
+                    span info@combo.uz 
+            li.header-top__right-item 
+                a.header-top__right-link(href="tel:+998951423313") 
+                    img(src="/assets/images/icons/call.svg", alt="combo.uz phone number")
+                    span +998 (95) 142 - 33 - 13 
+            li.header-top__right-item 
+                a.header-top__right-link.header-top__right-sp-link.darkBlueHover(href="#!") Заказать звонок 
+            li.header-top__right-item 
+                a.header__link.header__link-sp(href="#!") Авторизация / Регистрация
+        ul.header__list.header__list-se 
+            li.header__list-se-item 
+                a.header__link-se(href="#!")
+                    img(src="/assets/images/icons/heart.svg", alt="combo.uz favorites")  
+            li.header__list-se-item 
+                a.header__link-se(href="/busket.html")
+                    img(src="/assets/images/icons/work.svg", alt="combo.uz busket goods")  
+                    span.header__busket-notify.have-goods 2
+        button.header__close 
+            img(src="/assets/images/icons/close.svg", alt="close icon")
+    .header__abs

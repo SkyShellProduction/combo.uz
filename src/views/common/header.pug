@@ -6,32 +6,17 @@
         {name: 'День-Ночь', url: '/goods-page.html'},
         {name: 'Плиссе', url: '/goods-page.html'},
         {name: 'Шторы', url: '/goods-page.html'},
-        {name: 'Авторизация / Регистрация', url: '#!', class: "header__link-sp"},
     ]
 mixin header() 
-    header.header
+    .header
         .container 
             nav.header__nav 
-                a.logo(href="/")
-                    img(src="/assets/images/icons/logo.svg", alt="combo.uz logo")
-                .header__items 
-                    ul.header__list
-                        each link in links 
-                            li.header__list-item 
-                                a.header__link(href=link.url, class=link.class)=link.name  
-                    ul.header__list.header__list-se 
-                        li.header__list-se-item 
-                            a.header__link-se(href="#!")
-                                img(src="/assets/images/icons/heart.svg", alt="combo.uz favorites")  
-                        li.header__list-se-item 
-                            a.header__link-se(href="/busket.html")
-                                img(src="/assets/images/icons/work.svg", alt="combo.uz busket goods")  
-                                span.header__busket-notify.have-goods 2
-                    button.header__close 
-                        img(src="/assets/images/icons/close.svg", alt="close icon")
+                ul.header__list
+                    each link in links 
+                        li.header__list-item 
+                            a.header__link(href=link.url, class=link.class)=link.name  
                 button.header__btn 
                     span.bars.first 
                     span.bars.second
                     span.bars.third
-        .header__abs
 
