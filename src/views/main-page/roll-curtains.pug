@@ -6,7 +6,7 @@ mixin roll-curtains(count=3, extraClass='')
                 - for (var i = 0; i < count; i++)
                     .roll-curtains__card 
                         a.roll-curtains__img(href="/single-item.html") 
-                            img(src="/assets/images/main-page/roll-curtains.png", alt="roll-curtains Combo.uz")
+                            img(src="/assets/images/main-page/roll-curtains.png", alt="roll-curtains Combo.uz" loading="lazy")
                             if (i === 0)
                                 span.roll-curtains__discount-abs СКИДКА 15%
                         .roll-curtains__text 

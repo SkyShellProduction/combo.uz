@@ -1,7 +1,15 @@
 .header-top {
-  background: #f1f1f1;
-  padding: 15px 0;
-
+  background: #3A3A3A;
+  padding: 0 38px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo{
+    margin-right: 30px;
+  }
   &__items {
     display: flex;
     align-items: center;
@@ -14,11 +22,11 @@
 
     &-link {
       display: block;
-      color: var(--mainTitleText);
+      color: var(--textWhite);
       font-size: 20px;
       font-weight: 400;
       line-height: normal;
-      margin-right: 50px;
+      margin: 0 15px;
       &:hover {
         color: var(--textPrimary);
       }
@@ -32,8 +40,8 @@
     &-link {
       display: flex;
       align-items: center;
-      margin-left: 60px;
-      color: var(--mainTitleText);
+      margin: 0 15px;
+      color: var(--textWhite);
       font-size: 20px;
       font-weight: 400;
       line-height: normal;
@@ -64,34 +72,78 @@
   }
 }
 
-@media(max-width: 1216px) {
-  .header-top {
-    &__left-link {
-      margin-right: 15px;
-    }
 
-    &__right-link {
-      margin-left: 15px;
+
+@media(max-width: 1600px) {
+  .header-top {
+    padding: 0 15px;
+    .logo{
+      margin-right: 0;
+      img {
+        width: 220px;
+      }
+    }
+    &__left{
+      &-link{
+        margin: 0 5px;
+      }
+    }
+    &__right{
+      &-link{
+        margin: 0 5px;
+      }
     }
   }
 }
+
+@media(max-width: 1346px) {
+  .header-top {
+    .logo img {
+      width: 180px;
+    }
+    &__left{
+      &-link{
+        font-size: 14px;
+      }
+    }
+    &__right{
+      &-link{
+       font-size: 14px;
+      }
+    }
+  }
+  .header__link-sp{
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+@media(max-width: 1216px) {
+  .header-top {
+    &__left{
+      flex-direction: column;
+      &-link{
+        margin: 10px 0;
+      }
+    }
+    &__right{
+      flex-direction: column;
+      &-link{
+        margin: 10px 0;
+      }
+    }
+  }
+  .header__link-sp{
+    margin: 10px 0;
+  }
+}
+
 
 @media(max-width: 876px) {
   .header-top {
-    &__right-link {
-      display: none;
-    }
 
     &__right-sp-link {
       display: block;
-    }
-  }
-}
-
-@media(max-width: 442px) {
-  .header-top {
-    &__right-sp-link {
-      display: none;
     }
   }
 }
