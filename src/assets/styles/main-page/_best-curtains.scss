@@ -1,7 +1,10 @@
 .best-curtains {
   margin: 49px 0 20px;
   position: relative;
-
+  &__slider{
+    overflow: hidden;
+    position: relative;
+  }
   &__content {
     position: relative;
     display: flex;
