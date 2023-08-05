@@ -1,18 +1,6 @@
-- 
-    var links = [
-        {name: 'На пластиковые окна', url: '/goods-page.html'},
-        {name: 'Руллонные', url: '/goods-page.html'},
-        {name: 'Вертикальные', url: '/goods-page.html'},
-        {name: 'День-Ночь', url: '/goods-page.html'},
-        {name: 'Плиссе', url: '/goods-page.html'},
-        {name: 'Шторы', url: '/goods-page.html'},
-    ]
 mixin header() 
     .header
         .container 
             nav.header__nav 
-                ul.header__list
-                    each link in links 
-                        li.header__list-item 
-                            a.header__link(href=link.url, class=link.class)=link.name  
+                include ./header-links.pug
 

@@ -60,7 +60,17 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    &-item{
+      position: relative;
+      &:hover {
+        .header__list-sub{
+          opacity: 1;
+          z-index: 20;
+        }
+      }
+    }
   }
+
 
   &__list-se {
     width: initial;
@@ -107,6 +117,17 @@
       display: flex;
     }
   }
+  &__list-sub{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    padding: 15px 10px;
+    width: 100%;
+    background: var(--whiteColor);
+    &-link{
+      margin: 10px 0;
+    }
+  }
 }
 
 @media(max-width: 1284px) {
@@ -124,6 +145,7 @@
     }
     &__nav{
       justify-content: space-between;
+      display: none;
     }
     &__items{
       position: fixed;
@@ -131,6 +153,7 @@
       flex-direction: column;
       text-align: center;
       height: 100%;
+      overflow: auto;
       width: 220px;
       padding: 70px 15px;
       right: 0;

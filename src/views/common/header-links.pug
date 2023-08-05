@@ -1,0 +1,17 @@
+- 
+    var links = [
+        {name: 'На пластиковые окна', url: '/goods-page.html'},
+        {name: 'Руллонные', url: '/goods-page.html'},
+        {name: 'Вертикальные', url: '/goods-page.html'},
+        {name: 'День-Ночь', url: '/goods-page.html'},
+        {name: 'Плиссе', url: '/goods-page.html'},
+        {name: 'Шторы', url: '/goods-page.html'},
+    ]
+ul.header__list.header__list-top
+    each link in links 
+        li.header__list-item 
+            a.header__link(href=link.url, class=link.class)=link.name
+            ul.header__list-sub 
+                - for (var i = 0; i < 4; i++)
+                    li.header__list-sub-item 
+                        a.header__link.header__list-sub-link(href="#!") Link
