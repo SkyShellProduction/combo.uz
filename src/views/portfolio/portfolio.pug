@@ -1,0 +1,13 @@
+- var image01 = "/assets/images/main-page/gallery-projects01.png"
+- var image02 = "/assets/images/main-page/gallery-projects02.png"
+.portfolio 
+    .container 
+        .portfolio__cards 
+            - for (var i = 0; i < 9; i++)
+                .portfolio__card 
+                    a.portfolio__link(href="#!") 
+                    img(src=i%2==0 ? image01 : image02 , alt="Combo.uz Portfolio work")
+                    .portfolio__text 
+                        p.gallery-projects__excerpt.portfolio__excerpt 0#{i+1} - Bed Room
+                        h4.gallery-projects__name.portfolio__name Inner Peace
+                
