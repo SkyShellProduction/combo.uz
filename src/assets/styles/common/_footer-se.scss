@@ -1,0 +1,107 @@
+.footer-se {
+    margin-top: 69px;
+
+    &__top {
+        height: 64px;
+        background: #484747;
+        margin-bottom: 22px;
+    }
+
+    &__items {
+        position: relative;
+        top: -65px;
+        max-width: 1263px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__list.other{
+        .footer-se__link-sp{
+            color: var(--darkText) !important;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: var(--darkText);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        margin: 15px 0;
+
+        &-sp {
+            font-weight: 700;
+            color: var(--textWhite);
+            font-feature-settings: 'clig'off, 'liga'off;
+            line-height: 110%;
+            margin-top: 0;
+            margin-bottom: 44px;
+        }
+    }
+
+    &__kinds {
+        max-width: 1263px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-title {
+            margin-bottom: 2px;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-se{
+        &__top{
+            display: none;
+        }
+        &__items{
+            top: 0;
+        }
+        &__list {
+            margin: 0 5px;
+        }
+        &__link-sp{
+            color: var(--darkText);
+        }
+        &__kinds{
+            margin-top: 30px;
+            &-list{
+                gap: 0 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .footer-se{
+        &__top{
+            display: none;
+        }
+        &__list {
+            margin: 0;
+            width: 100%;
+        }
+        &__link-sp{
+            padding: 21px 15px;
+            background: #484747;
+            margin-left: calc(var(--containerPadding) * -1);
+            margin-right: calc(var(--containerPadding) * -1);
+            color: var(--textWhite) !important;
+        }
+        &__kinds-list{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
