@@ -1,0 +1,34 @@
+include ../footerLinksPath.pug
+.footer__top 
+    ul.footer__list 
+        li.footer__list-item 
+            img(src="/assets/images/icons/call-dark.svg" alt="combo.uz phone numbers")
+            strong Телефоны
+        li.footer__list-item 
+            a.footer__list-link-se(href=phone.url)=phone.name
+        li.footer__list-item 
+            span (с 8:00 до 21:00)
+    ul.footer__list 
+        li.footer__list-item 
+            img(src="/assets/images/icons/message-dark.svg" alt="combo.uz mailbox")
+            strong Почта
+        li.footer__list-item 
+            a.footer__list-link(href=mail.url)=mail.name 
+        li.footer__list-item 
+            span Отдел продаж
+    ul.footer__list 
+        li.footer__list-item 
+            img(src="/assets/images/icons/location.svg" alt="combo.uz location")
+            strong Адрес
+        li.footer__list-item 
+            a.footer__list-link(href=location.url, target="_blank")=location.name
+        li.footer__list-item 
+            span Офис
+    ul.footer__list 
+        li.footer__list-item 
+            img(src="/assets/images/icons/clock.svg" alt="combo.uz work times")
+            strong Режим работы
+        li.footer__list-item 
+            div.footer__list-link-se с 9:00 до 19:00
+        li.footer__list-item 
+            span Пн-Пт
