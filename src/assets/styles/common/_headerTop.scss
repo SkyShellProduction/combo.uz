@@ -170,3 +170,11 @@
     }
   }
 }
+
+@media(max-width: 450px) {
+  .header-top {
+      .logo img{
+        width: 160px;
+      }
+  }
+}
