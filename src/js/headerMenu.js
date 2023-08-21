@@ -2,6 +2,8 @@ const headerBtn = document.querySelector(".header__btn");
 const headerItems = document.querySelector(".header__items");
 const headerAbs = document.querySelector(".header__abs");
 const headerClose = document.querySelector(".header__close");
+const headerLang = document.querySelector(".header__lang");
+const headerLangOptions = document.querySelector(".header__lang-options");
 
 if (headerBtn && headerItems && headerAbs && headerClose) {
   const openClose = (bool = false) => {
@@ -19,4 +21,11 @@ if (headerBtn && headerItems && headerAbs && headerClose) {
       openClose();
     });
   });
+}
+
+if (headerLang && headerLangOptions) {
+  headerLang.addEventListener("click", (e) => {
+    const bool = headerLangOptions.classList.contains("show");
+    headerLangOptions.classList[bool ? "remove" : "add"]("show");
+  })
 }
