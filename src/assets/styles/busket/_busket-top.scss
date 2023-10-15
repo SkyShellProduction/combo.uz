@@ -27,12 +27,12 @@
     border-bottom: 1px solid #d9d9d9;
     padding: 13px 25px 10px;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.6fr 0.6fr 0.8fr 1fr;
   }
 
   &__elem {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.6fr 0.6fr 0.8fr 1fr;
     gap: 10px;
     align-items: center;
     padding: 10px 25px;
@@ -74,6 +74,14 @@
     width: max-content;
     position: absolute;
     right: 49px;
+  }
+}
+
+@media (max-width: 928px) {
+  .busket-top {
+    &__remove{
+      right: 30px;
+    }
   }
 }
 
