@@ -125,12 +125,33 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1035px) {
   .goods-filters {
     &__left {
       max-width: 250px;
       top: 60px;
 
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .goods-filters {
+    .cassette-combo__item{
+      max-width: 250px;
+    }
+    .cassette-combo__busket{
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .goods-filters {
+    .cassette-combo__item{
+      max-width: 210px;
+    }
+    .cassette-combo__busket{
+      font-size: 10px;
     }
   }
 }
@@ -162,6 +183,12 @@
 
 @media (max-width: 484px) {
   .goods-filters {
+    &__cards{
+      gap: 10px;
+    }
+    .cassette-combo__item{
+      max-width: 150px;
+    }
     &__accordion-link{
       font-size: 12px;
       margin: 3px;
