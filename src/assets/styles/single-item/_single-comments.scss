@@ -74,6 +74,11 @@
     border: 1px solid #e0e0e1;
     background: #f1f2f3;
   }
+  &__avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 }
 
 @media (max-width: 500px) {

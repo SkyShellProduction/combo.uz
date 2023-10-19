@@ -16,6 +16,9 @@
 
   &__content {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
     &:hover {
       .cassette-combo__text {
@@ -29,6 +32,8 @@
     position: relative;
     max-width: 315px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {
@@ -37,8 +42,14 @@
     border: 1px solid transparent;
   }
 
-  &__img > img {
-    width: 100%;
+  &__img {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    & >img {
+      width: 100%;
+      aspect-ratio: 1/0.8;
+    }
   }
 
   &__name {
@@ -92,6 +103,7 @@
     color: var(--textWhite);
     font-size: 16px;
     line-height: 22px;
+
     span {
       display: block;
       width: 100%;
@@ -101,43 +113,49 @@
 }
 
 @media (max-width: 690px) {
-  .cassette-combo{
-    &__item{
+  .cassette-combo {
+    &__item {
       max-width: 250px;
     }
-    &__busket{
+
+    &__busket {
       font-size: 14px;
     }
   }
 }
 
 @media (max-width: 560px) {
-  .cassette-combo{
-    &__cards{
-     gap: 10px;
+  .cassette-combo {
+    &__cards {
+      gap: 10px;
     }
-    &__item{
+
+    &__item {
       max-width: 200px;
     }
-    &__text{
+
+    &__text {
       padding: 10px;
     }
-    &__elem{
+
+    &__elem {
       font-size: 13px;
       margin-top: 0;
     }
-    &__busket{
+
+    &__busket {
       font-size: 10px;
     }
   }
 }
 
 @media(max-width: 484px) {
-  .cassette-combo{
-    &__item{
+  .cassette-combo {
+    &__item {
       max-width: 150px;
     }
-    &__favorite{
+
+    &__favorite {
       position: absolute;
       top: 0;
       left: 0;
