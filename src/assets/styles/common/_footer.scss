@@ -64,12 +64,27 @@
       gap: 30px;
     }
     &-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid var(--primaryColor);
+      &-mask{
+        width: 24px;
+        height: 24px;
+        mask-size: 24px;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: var(--primaryColor);
+        position: relative;
+        z-index: 2;
+      }
       &:hover{
-        svg{
-          fill: var(--primaryColor);
-          path{
-            fill: var(--whiteColor);
-          }
+        background: var(--primaryColor);
+        .footer__bottom-link-mask{
+          background-color: var(--whiteColor);
         }
       }
     }
