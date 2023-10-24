@@ -16,20 +16,21 @@
   }
 
   &__background {
+    position: absolute;
     object-fit: cover;
     width: 100%;
-    min-height: 397px;
     height: 100%;
-    position: relative;
+    left: 0;
+    top: 0;
     animation: scaleSliderImage 6s linear infinite ;
   }
 
   &__text {
-    position: absolute;
-    top: 80px;
+    position: relative;
+    z-index: 2;
+    padding: 80px 0 188px;
     max-width: 988px;
     width: 100%;
-    padding: 0 15px;
     z-index: 2;
   }
 
@@ -58,6 +59,9 @@
 
     &__descr {
       font-size: 18px;
+    }
+    &__text{
+      padding: 80px 0;
     }
   }
 }
