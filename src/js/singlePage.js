@@ -50,6 +50,76 @@ if (singleSelects) {
           hint.classList.remove("show");
         }, 2000);
       }
-    })
-  })
+    });
+  });
+}
+
+const selfPageControls = [...document.querySelectorAll(".self-page__control")];
+const selfPagePrice = document.querySelector(".single__content-price span");
+const getPrice = (item, atrr) =>
+  isNaN(Number(item.getAttribute(atrr)))
+    ? null
+    : Number(item.getAttribute(atrr));
+if (selfPageControls && selfPagePrice) {
+  const startPrice = getPrice(selfPagePrice, "data-start-price") || 0;
+  let changedPrice = getPrice(selfPagePrice, "data-start-price") || 0;
+  selfPageControls.forEach((item) => {
+    item.addEventListener("change", function (e) {
+      let summ = 0;
+      selfPageControls.forEach((elem) => {
+        if (elem.selectedOptions) {
+          const selectOption = elem.selectedOptions[0];
+          if (selectOption) {
+            const price = getPrice(selectOption, "data-price");
+            // console.log(price, elem);
+            if (price) summ += price;
+          }
+        } else {
+          if(elem.checked) {
+            const price = getPrice(elem, "data-price");
+            // console.log(price, elem);
+            if (price) summ += price;
+          }
+        }
+      });
+      selfPagePrice.textContent = (startPrice + summ).toLocaleString();
+      selfPageControls.forEach((elem) => {
+        if (elem.selectedOptions) {
+          const selectOption = elem.selectedOptions[0];
+          if (selectOption) {
+            const counter = getPrice(selectOption, "data-count");
+            if(counter) {
+              changedPrice = (startPrice+summ) * counter;
+              selfPagePrice.textContent = changedPrice.toLocaleString();
+            }
+          }
+        }
+      })
+      // if (price) {
+      //   changedPrice = startPrice + price;
+      //   selfPagePrice.textContent = changedPrice.toLocaleString();
+      // }
+      // if(e.target.selectedOptions) {
+      //   const selectOption = e.target.selectedOptions[0];
+      //   if(selectOption) {
+      //     const price = getPrice(selectOption, "data-price");
+      //     const counter = getPrice(selectOption, "data-count");
+      //     if(price) {
+      //       changedPrice = startPrice + price;
+      //     }
+      //     else if(counter) {
+      //       changedPrice = startPrice * counter;
+      //     }
+      //     selfPagePrice.textContent = changedPrice.toLocaleString();
+      //   }
+      // }
+      // else {
+      //   const price = getPrice(e.target, "data-price");
+      //   if(price) {
+      //     changedPrice = startPrice + price;
+      //     selfPagePrice.textContent = changedPrice.toLocaleString();
+      //   }
+      // }
+    });
+  });
 }

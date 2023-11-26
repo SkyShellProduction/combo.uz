@@ -6,22 +6,22 @@ form.single__right
             .single__right-hint-abs 
                 p Менее 1 кв.м, считается как 1 кв.м
             span.single__right-info ширина
-            select.single__right-select(name="item-width")
-                option(value="2мм" selected) 2мм  
-                option(value="4мм") 4мм  
-                option(value="6мм") 6мм  
-                option(value="8мм") 8мм  
-                option(value="10мм") 10мм  
+            select.single__right-select.self-page__control(name="item-width")
+                option(value="2мм" selected data-price="1000") 2мм  
+                option(value="4мм" data-price="2000") 4мм  
+                option(value="6мм" data-price="3000") 6мм  
+                option(value="8мм" data-price="4000") 8мм  
+                option(value="10мм" data-price="5000") 10мм  
         .single__right-chose 
             .single__right-hint-abs 
                     p Менее 1 кв.м, считается как 1 кв.м
             span.single__right-info Длина
-            select.single__right-select(name="item-length")
-                option(value="54мм" selected) 54мм  
-                option(value="56мм") 56мм  
-                option(value="58мм") 58мм  
-                option(value="60мм") 60мм  
-                option(value="62мм") 60мм  
+            select.single__right-select.self-page__control(name="item-length")
+                option(value="54мм" selected data-price="1000") 54мм  
+                option(value="56мм" data-price="2000") 56мм  
+                option(value="58мм" data-price="3000") 58мм  
+                option(value="60мм" data-price="4000") 60мм  
+                option(value="62мм" data-price="5000") 60мм  
     strong.single__right-feature.control Управление
     .single__right-sep.control 
         label.single__right-label     
@@ -34,30 +34,30 @@ form.single__right
             span.single__right-info Справа
     strong.single__right-feature.count Кол-во
     .single__right-sep.count 
-        select.single__right-select(name="item-count")
+        select.single__right-select.self-page__control(name="item-count")
             - for (var i = 1; i < 20; i++)
-                option(value=i)=i 
+                option(value=i data-count=i)=i 
         span.single__right-info штук
     .single__right-flex 
         .single__right-flex-left 
             strong.single__right-feature.type-cornise Тип карниза
             .single__right-sep 
                 label.single__right-label     
-                    input(type="radio" value="aluminium" name="item-cornice-type")
+                    input.self-page__control(type="radio" value="aluminium" name="item-cornice-type" data-price="3000")
                     span.single__right-check 
                     span.single__right-info Алюминевый
                 label.single__right-label     
-                    input(type="radio" value="plastic" name="item-cornice-type")
+                    input.self-page__control(type="radio" value="plastic" name="item-cornice-type" data-price="2000")
                     span.single__right-check 
                     span.single__right-info Пластиковый
             strong.single__right-feature.type-control Тип управления
             .single__right-sep 
                 label.single__right-label     
-                    input(type="radio" value="manual" name="item-control-type")
+                    input.self-page__control(type="radio" value="manual" name="item-control-type" data-price="3000")
                     span.single__right-check 
                     span.single__right-info Ручной
                 label.single__right-label     
-                    input(type="radio" value="electro" name="item-control-type")
+                    input.self-page__control(type="radio" value="electro" name="item-control-type" data-price="6000")
                     span.single__right-check 
                     span.single__right-info С электроприводом
             //- strong.single__right-feature.rounding Округление
