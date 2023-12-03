@@ -2,6 +2,12 @@ const singleImageItems = [...document.querySelectorAll(".single__left-item")];
 const singleImageBlock = document.querySelector(".single__left-show");
 const singleImageZoom = singleImageBlock?.querySelector(".single__left-zoom");
 const singleImage = singleImageBlock?.querySelector("img");
+
+export const getPrice = (item, atrr) =>
+  isNaN(Number(item.getAttribute(atrr)))
+    ? null
+    : Number(item.getAttribute(atrr));
+    
 if (singleImage && singleImageItems && singleImageBlock && singleImageZoom) {
   singleImageItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
@@ -56,10 +62,7 @@ if (singleSelects) {
 
 const selfPageControls = [...document.querySelectorAll(".self-page__control")];
 const selfPagePrice = document.querySelector(".single__content-price span");
-const getPrice = (item, atrr) =>
-  isNaN(Number(item.getAttribute(atrr)))
-    ? null
-    : Number(item.getAttribute(atrr));
+
 if (selfPageControls && selfPagePrice) {
   const startPrice = getPrice(selfPagePrice, "data-start-price") || 0;
   let changedPrice = getPrice(selfPagePrice, "data-start-price") || 0;
@@ -95,31 +98,6 @@ if (selfPageControls && selfPagePrice) {
           }
         }
       })
-      // if (price) {
-      //   changedPrice = startPrice + price;
-      //   selfPagePrice.textContent = changedPrice.toLocaleString();
-      // }
-      // if(e.target.selectedOptions) {
-      //   const selectOption = e.target.selectedOptions[0];
-      //   if(selectOption) {
-      //     const price = getPrice(selectOption, "data-price");
-      //     const counter = getPrice(selectOption, "data-count");
-      //     if(price) {
-      //       changedPrice = startPrice + price;
-      //     }
-      //     else if(counter) {
-      //       changedPrice = startPrice * counter;
-      //     }
-      //     selfPagePrice.textContent = changedPrice.toLocaleString();
-      //   }
-      // }
-      // else {
-      //   const price = getPrice(e.target, "data-price");
-      //   if(price) {
-      //     changedPrice = startPrice + price;
-      //     selfPagePrice.textContent = changedPrice.toLocaleString();
-      //   }
-      // }
     });
   });
 }
