@@ -7,21 +7,21 @@ form.single__right
                 p Менее 1 кв.м, считается как 1 кв.м
             span.single__right-info ширина
             select.single__right-select.self-page__control(name="item-width")
-                option(value="2мм" selected data-price="1000") 2мм  
-                option(value="4мм" data-price="2000") 4мм  
-                option(value="6мм" data-price="3000") 6мм  
-                option(value="8мм" data-price="4000") 8мм  
-                option(value="10мм" data-price="5000") 10мм  
+                option(value="2мм" selected data-name="width" data-value="2мм") 2мм  
+                option(value="4мм" data-name="width" data-value="4мм") 4мм  
+                option(value="6мм" data-name="width" data-value="6мм") 6мм  
+                option(value="8мм" data-name="width" data-value="8мм") 8мм  
+                option(value="10мм" data-name="width" data-value="10мм") 10мм  
         .single__right-chose 
             .single__right-hint-abs 
                     p Менее 1 кв.м, считается как 1 кв.м
             span.single__right-info Длина
             select.single__right-select.self-page__control(name="item-length")
-                option(value="54мм" selected data-price="1000") 54мм  
-                option(value="56мм" data-price="2000") 56мм  
-                option(value="58мм" data-price="3000") 58мм  
-                option(value="60мм" data-price="4000") 60мм  
-                option(value="62мм" data-price="5000") 60мм  
+                option(value="54мм" selected data-name="height" data-value="54мм") 54мм  
+                option(value="56мм" data-name="height" data-value="56мм") 56мм  
+                option(value="58мм" data-name="height" data-value="58мм") 58мм  
+                option(value="60мм" data-name="height" data-value="60мм") 60мм  
+                option(value="62мм" data-name="height" data-value="62мм") 60мм  
     strong.single__right-feature.control Управление
     .single__right-sep.control 
         label.single__right-label     
@@ -36,28 +36,28 @@ form.single__right
     .single__right-sep.count 
         select.single__right-select.self-page__control(name="item-count")
             - for (var i = 1; i < 20; i++)
-                option(value=i data-count=i)=i 
+                option(value=i data-name="quantity" data-value=i)=i 
         span.single__right-info штук
     .single__right-flex 
         .single__right-flex-left 
             strong.single__right-feature.type-cornise Тип карниза
             .single__right-sep 
                 label.single__right-label     
-                    input.self-page__control(type="radio" value="aluminium" name="item-cornice-type" data-price="3000")
+                    input.self-page__control(type="radio" value="aluminium" name="item-cornice-type" data-name="cornice_type" data-value="aluminium")
                     span.single__right-check 
                     span.single__right-info Алюминевый
                 label.single__right-label     
-                    input.self-page__control(type="radio" value="plastic" name="item-cornice-type" data-price="2000")
+                    input.self-page__control(type="radio" value="plastic" name="item-cornice-type" data-name="cornice_type" data-value="plastic")
                     span.single__right-check 
                     span.single__right-info Пластиковый
             strong.single__right-feature.type-control Тип управления
             .single__right-sep 
                 label.single__right-label     
-                    input.self-page__control(type="radio" value="manual" name="item-control-type" data-price="3000")
+                    input.self-page__control(type="radio" value="manual" name="item-control-type" data-name="control_type" data-value="manual")
                     span.single__right-check 
                     span.single__right-info Ручной
                 label.single__right-label     
-                    input.self-page__control(type="radio" value="electro" name="item-control-type" data-price="6000")
+                    input.self-page__control(type="radio" value="electro" name="item-control-type" data-name="control_type" data-value="eleactro")
                     span.single__right-check 
                     span.single__right-info С электроприводом
             //- strong.single__right-feature.rounding Округление
